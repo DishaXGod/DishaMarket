@@ -1,4 +1,4 @@
-
+local files = {
     {path = "/lib/json.lua", link = "https://raw.githubusercontent.com/rxi/json.lua/master/json.lua"},
     {path = "/lib/serialization.lua", link = "https://raw.githubusercontent.com/MightyPirates/OpenComputers/master-MC1.7.10/src/main/resources/assets/opencomputers/loot/openos/lib/serialization.lua"}
 }

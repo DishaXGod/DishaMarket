@@ -1,6 +1,6 @@
 {
     shop = {
-        {text = "Какая-то хуета", sellPrice = 69696969, minCount = 5, maxCount = 15, fingerprint = {{dmg=0.0,id="IC2:blockOreUran"}, {dmg=0.0,id="minechem:tile.oreUranium"}}, raw_name = {"ic2.blockoreuran", "tile.oreuranium"}},
+        {text = "Какая-то хуета", BuyPrice = 69696969, minCount = 5, maxCount = 15, fingerprint = {{dmg=0.0,id="IC2:blockOreUran"}, {dmg=0.0,id="minechem:tile.oreUranium"}}, raw_name = {"ic2.blockoreuran", "tile.oreuranium"}},
         {text = "Железная руда", sellPrice = 35, minCount = 0, maxCount = 1310720, fingerprint = {{dmg=0.0,id="minecraft:iron_ore"}}, raw_name = {"tile.oreiron"}},
         {text = "Золотая руда", sellPrice = 45, minCount = 0, maxCount = 1310720, fingerprint = {{dmg=0.0,id="minecraft:gold_ore"}}, raw_name = {"tile.oregold"}},
         {text = "Медная руда", sellPrice = 35, minCount = 0, maxCount = 1310720, fingerprint = {{dmg=0.0,id="ThermalFoundation:Ore"}}, raw_name = {"tile.thermalfoundation.ore.copper.name"}},

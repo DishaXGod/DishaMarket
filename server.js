@@ -1,7 +1,7 @@
 const http = require("http")
 const fs = require("fs")
 const port = 1414
-const key = "1234"
+const key = "3224"
 
 function zero(value) {
     return value <= 9 ? "0" : ""
@@ -266,7 +266,7 @@ function requestHandler(request, response) {
             response.end()
         }
     } else if (request.url != "/favicon.ico") {
-        response.end("R.I.P")
+        response.end("SkillCoin")
     } else {
         response.end()
     }

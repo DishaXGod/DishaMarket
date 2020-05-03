@@ -106,7 +106,7 @@ end
 
 local function update()
     clear()
-    gpu.set(26, 9, "Updating...")
+    gpu.set(26, 9, "Обновление системы...")
     write("/main.lua", "w", request("https://raw.githubusercontent.com/DishaXGod/DishaMarket/master/terminal.lua"))
 end
 

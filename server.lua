@@ -255,7 +255,7 @@ function start()
 			io.stderr:write("Port " .. port .. " is busy!")
 		else
 			if modem.open(port) then
-				local success = "NWAMarket started on port " .. port .. "!"
+				local success = "NWA-Market started on port " .. port .. "!"
 				print(success)
 				log(success)
 				event.listen("modem_message", messageHandler)

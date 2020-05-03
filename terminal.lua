@@ -17,7 +17,7 @@ local me_side = "DOWN"
 local pim_side = "UP"
 local server = "Default"
 local version, port = "modem", 1414
-local serverAddress = "fcabde99-508f-4115-abd0-1406d4c404d2"
+local serverAddress = "bc0e2a09-3119-4f76-91d1-579c52da8830"
 
 local priceLottery = 150
 local superPrize = 10000
@@ -1434,7 +1434,7 @@ function login(name)
 
         if active then
             clear()
-            setColorText(18, 2, "[0xffffff]Приветствуем в [0x68f029]РипМаркете[0xffffff]!", color.background)
+            setColorText(18, 2, "[0xffffff]Приветствуем в [0x68f029]NWA-Shop[0xffffff]!", color.background)
             setColorText(17, 5, "[0xffffff]Встаньте на [0x46c8e3]PIM[0xffffff], чтобы войти", color.background)
             discord()
             drawPim()

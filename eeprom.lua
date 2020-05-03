@@ -71,10 +71,10 @@ end
 
 local function help() 
     clear() 
-    gpu.set(24, 8, "CTRL+S — start") 
+    gpu.set(24, 8, "CTRL+S — Старт") 
     gpu.set(24, 9, "CTRL+D — Обновка") 
-    gpu.set(23, 10, "CTRL+A — dev mode") 
-    gpu.set(17, 11, "CTRL+ALT+C — force interrupt") 
+    gpu.set(23, 10, "CTRL+A — Режим редактирования") 
+    gpu.set(17, 11, "CTRL+ALT+C — Закрыть") 
 end
 
 local function findFilesystem()

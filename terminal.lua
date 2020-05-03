@@ -856,7 +856,7 @@ end
 
 local function balance(y, account)
     fill(1, 1, 60, 1, " ", color.background)
-    setColorText(nil, y, "[0x68f029]Баланс: [0xffffff]" .. math.floor(session.balance) .. " R.I.P", color.background)
+    setColorText(nil, y, "[0x68f029]Баланс: [0xffffff]" .. math.floor(session.balance) .. " SkillCoin", color.background)
 end
 
 local function purchase()
@@ -1018,8 +1018,8 @@ end
 
 local function lottery()
     balance(1)
-    setColorText(nil, 3, "[0x68f029]Мгновенная беспроигрышная лотерея. Цена билета — [0xffffff]" .. priceLottery .. " [0x68f029]рипов", color.background)
-    setColorText(19, 4, "[0x68f029]Супер-приз — [0xffffff]" .. superPrize .. " [0x68f029]рипов!", color.background)
+    setColorText(nil, 3, "[0x68f029]Мгновенная беспроигрышная лотерея. Цена билета — [0xffffff]" .. priceLottery .. " [0x68f029]SkillCoin", color.background)
+    setColorText(19, 4, "[0x68f029]Супер-приз — [0xffffff]" .. superPrize .. " [0x68f029]SkillCoin!", color.background)
     field()
 end
 
@@ -1043,7 +1043,7 @@ local function playLottery()
             end
         end
         rip = math.floor(rip)
-        setColorText(nil, 8, "[0x68f029]Вы выиграли: [0xffffff]" .. rip .. " [0x68f029]рипов", color.background)
+        setColorText(nil, 8, "[0x68f029]Вы выиграли: [0xffffff]" .. rip .. " [0x68f029]SkillCoin", color.background)
         local msgToLog = session.name .. " won the lottery " .. rip .. " rip"
         log(msgToLog, session.name)
         session.balance = session.balance + rip

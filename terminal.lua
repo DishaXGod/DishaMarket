@@ -1018,7 +1018,7 @@ end
 
 local function lottery()
     balance(1)
-    setColorText(nil, 3, "[0x68f029]Мгновенная беспроигрышная лотерея. Цена билета — [0xffffff]" .. priceLottery .. " [0x68f029]SkillCoin", color.background)
+    setColorText(nil, 3, "[0x68f029]Мгновенная беспроигрышная лотерея. Цена билета — [0xffffff]" .. priceLottery .. " [0x68f029]!", color.background)
     setColorText(19, 4, "[0x68f029]Супер-приз — [0xffffff]" .. superPrize .. " [0x68f029]SkillCoin!", color.background)
     field()
 end

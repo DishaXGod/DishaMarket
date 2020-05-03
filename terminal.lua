@@ -17,7 +17,7 @@ local me_side = "DOWN"
 local pim_side = "UP"
 local server = "Default"
 local version, port = "modem", 1414
-local serverAddress = "bc0e2a09-3119-4f76-91d1-579c52da8830"
+local serverAddress = "21aee619-83ae-41ad-a04a-fb2b441b9477"
 
 local priceLottery = 150
 local superPrize = 10000

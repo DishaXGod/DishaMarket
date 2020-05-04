@@ -74,7 +74,7 @@ local pimGeometry = {
     "⡇              ⢸",
     "⣇⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣸"
     }
-local pimGeometry = {
+local pimGeometry2 = {
     x = 18,
     y = 10,
 

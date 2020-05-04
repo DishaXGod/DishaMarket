@@ -8,8 +8,6 @@ local port = 1414
 
 local terminals = {
 	"19cb3c9e-72ec-43be-a2c4-4a9aaf0c6015"
-	"1f1e1ec4-03b8-4a1f-bba8-d2e71a32b359"
-	"2cc1ea1d-7238-48f5-8fd3-4d56d7d85a07"
 }
 
 for terminal = 1, #terminals do 

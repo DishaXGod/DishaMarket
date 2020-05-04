@@ -1016,50 +1016,50 @@ local function field(play)
     end
 end
 
-local function lottery()
-    balance(1)
-    setColorText(nil, 3, "[0x68f029]Мгновенная беспроигрышная лотерея. Цена билета — [0xffffff]" .. priceLottery .. " [0x68f029]!", color.background)
-    setColorText(19, 4, "[0x68f029]Супер-приз — [0xffffff]" .. superPrize .. " [0x68f029]SkillCoin!", color.background)
-    field()
-end
+--  local function lottery()
+  --   balance(1)
+  --   setColorText(nil, 3, "[0x68f029]Мгновенная беспроигрышная лотерея. Цена билета — [0xffffff]" .. priceLottery .. " [0x68f029]!", color.background)
+--     setColorText(19, 4, "[0x68f029]Супер-приз — [0xffffff]" .. superPrize .. " [0x68f029]SkillCoin!", color.background)
+--     field()
+-- end
 
-local function playLottery()
-    if session.balance >= priceLottery then
-        session.balance = session.balance - priceLottery
-        balance(1)
-        field(true)
+-- local function playLottery()
+--     if session.balance >= priceLottery then
+--         session.balance = session.balance - priceLottery
+--         balance(1)
+ --        field(true)
 
-        local rip = math.random(50, 350)
+--         local rip = math.random(50, 350)
 
-        if math.random(3000) == 3000 then
-            rip = superPrize
-        else
-            if rip >= 200 then
-                rip = rip - (math.random(rip) + (rip >= 250 and 70 or 40))
-
-                if rip <= 0 then
-                    rip = math.random(30, 65)
-                end
-            end
-        end
-        rip = math.floor(rip)
-        setColorText(nil, 8, "[0x68f029]Вы выиграли: [0xffffff]" .. rip .. " [0x68f029]SkillCoin", color.background)
-        local msgToLog = session.name .. " won the lottery " .. rip .. " rip"
-        log(msgToLog, session.name)
-        session.balance = session.balance + rip
-        local response = requestWithData({data = msgToLog, mPath = "/lottery.log", path = server .. "/lottery"}, {method = "merge", toMerge = {balance = {[server] = session.balance}}, name = session.name})
-        if not response or response.code ~= 200 then
-            log("Error on updating balance " .. (response and response.message and tostring(response.message) or "no server response"), session.name)
-            alert({"Внимание! Баланс не пополен,", "обратитесь к администрации!"})
-        end
-        sleep(.5)
-        balance(1)
-        fill(1, 10, 60, 1, " ", color.background)
-        field()
-    else
-        alert({"Недостаточно средств"})
-    end
-end
+ --        if math.random(3000) == 3000 then
+ --            rip = superPrize
+ --        else
+  --           if rip >= 200 then
+ --                rip = rip - (math.random(rip) + (rip >= 250 and 70 or 40))
+-- 
+  --               if rip <= 0 then
+  --                   rip = math.random(30, 65)
+  --               end
+--             end
+ --        end
+--         rip = math.floor(rip)
+--         setColorText(nil, 8, "[0x68f029]Вы выиграли: [0xffffff]" .. rip .. " [0x68f029]SkillCoin", color.background)
+--         local msgToLog = session.name .. " won the lottery " .. rip .. " rip"
+ --        log(msgToLog, session.name)
+ --        session.balance = session.balance + rip
+  --       local response = requestWithData({data = msgToLog, mPath = "/lottery.log", path = server .. "/lottery"}, {method = "merge", toMerge = {balance = {[server] = session.balance}}, name = session.name})
+  --       if not response or response.code ~= 200 then
+  --           log("Error on updating balance " .. (response and response.message and tostring(response.message) or "no server response"), session.name)
+  --           alert({"Внимание! Баланс не пополен,", "обратитесь к администрации!"})
+--         end
+  --       sleep(.5)
+ --        balance(1)
+ --        fill(1, 10, 60, 1, " ", color.background)
+ --        field()
+--     else
+ --        alert({"Недостаточно средств"})
+--     end
+-- end
 
 local function account()
     setColorText(nil, 7, "[0x68f029]" .. session.name .. ":", color.background)

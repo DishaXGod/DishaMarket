@@ -73,7 +73,9 @@ local pimGeometry = {
     "⡇              ⢸",
     "⡇              ⢸",
     "⣇⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣸"
+
 }
+
 
 local infoList, session, items, itemsInMe, guiPath, guiVariables = {{}}, {}, {}, {}, {}, {}, {}
 

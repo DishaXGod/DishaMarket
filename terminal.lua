@@ -981,31 +981,32 @@ local function ore()
     drawOreList()
 end
 
-local function nextFood()
-    if session.foodTime and time(true) < session.foodTime then
-        buttons.getFood.disabled = true
-        set(15, 5, "Вы сможете получить еду через:", color.background, color.lime) 
-        set(nil, 6, os.date("%H Часов %M Минут %S Секунд", session.foodTime - time(true)), color.background, 0xffffff)
-        drawButton("getFood")
-    else
-        buttons.getFood.disabled = false
-        drawButton("getFood")
-    end
-end
+--local function nextFood()
+--    if session.foodTime and time(true) < session.foodTime then
+ --       buttons.getFood.disabled = true
+ --       set(15, 5, "Вы сможете получить еду через:", color.background, color.lime) 
+ --       set(nil, 6, os.date("%H Часов %M Минут %S Секунд", session.foodTime - time(true)), color.background, 0xffffff)
+ --       drawButton("getFood")
+ --   else
+ --       buttons.getFood.disabled = false
+ --       drawButton("getFood")
+ --   end
+--end
 
 local function getFood()
-    if autoInsert(items.food, freeFoodCount) > 0 then
-        log("I give out free food", session.name)
-        session.foodTime = time(true) + 7200
-        haveFood = true
-        requestWithData(nil, {method = "merge", toMerge = {foodTime = session.foodTime}, name = session.name})
-        fill(18, 7, 26, 1, " ", color.background)
-        set(21, 7, "Приятного аппетита!", color.background, 0xffffff)
-        nextFood()
-        drawButton("getFood")
-    else
-        set(18, 7, "Еда кончилась, извините :(", color.background, color.lime)
-    end
+    	alert({"Вася, худей!"})
+ --   if autoInsert(items.food, freeFoodCount) > 0 then
+  --      log("I give out free food", session.name)
+ --       session.foodTime = time(true) + 7200
+ --       haveFood = true
+ --       requestWithData(nil, {method = "merge", toMerge = {foodTime = session.foodTime}, name = session.name})
+  --      fill(18, 7, 26, 1, " ", color.background)
+  --      set(21, 7, "Приятного аппетита!", color.background, 0xffffff)
+ --       nextFood()
+--        drawButton("getFood")
+ --   else
+ --       set(18, 7, "Еда кончилась, извините :(", color.background, color.lime)
+--    end
 end
 
 local function field(play)

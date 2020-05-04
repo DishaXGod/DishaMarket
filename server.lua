@@ -11,7 +11,7 @@ local terminals = {
 "2cc1ea1d-7238-48f5-8fd3-4d56d7d85a07",
 "24c2de55-d0cc-44a6-a14a-df3b5c534336",
 "2f87225d-edb2-4ae6-bc09-ba787d055712",
-"f46477ae-2147-4c9e-b63f-00946bb8de36",
+"e57b4c80-1600-4faf-9c29-80ad7a21dbae",
 "3c8b4ab8-5379-4134-b386-9f70a43d3c15"
 }
 

@@ -19,9 +19,9 @@ local server = "Default"
 local version, port = "modem", 1414
 local serverAddress = "d4a82811-ce76-4f92-a76f-d7872c57d77c"
 
-local priceLottery = 150
-local superPrize = 10000
-local freeFoodCount = 16
+--local priceLottery = 150
+--local superPrize = 10000
+--local freeFoodCount = 16
 
 local INFO = [[
 [0x68f029]1. [0xffffff]Что это такое? Ответ — Это магазин/обменник. Как угодно
@@ -1017,8 +1017,8 @@ local function field(play)
 end
 
 --  local function lottery()
-  --   balance(1)
-  --   setColorText(nil, 3, "[0x68f029]Мгновенная беспроигрышная лотерея. Цена билета — [0xffffff]" .. priceLottery .. " [0x68f029]!", color.background)
+--   balance(1)
+--   setColorText(nil, 3, "[0x68f029]Мгновенная беспроигрышная лотерея. Цена билета — [0xffffff]" .. priceLottery .. " [0x68f029]!", color.background)
 --     setColorText(19, 4, "[0x68f029]Супер-приз — [0xffffff]" .. superPrize .. " [0x68f029]SkillCoin!", color.background)
 --     field()
 -- end

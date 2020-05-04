@@ -65,14 +65,14 @@ local pimGeometry = {
     x = 23,
     y = 7,
 
-    "⡏⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⢹",
-    "⡇              ⢸",
-    "⡇              ⢸",
-    "⡇              ⢸",
-    "⡇              ⢸",
-    "⡇              ⢸",
-    "⡇              ⢸",
-    "⣇⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣸"
+    "⡏⠉⠉̿̿ ̿'̿'\̵͇̿̿\з=(◣_◢)=ε/̵͇̿̿/'̿'̿ ̿ ̿̿ ̿⠉⢹",
+    "⡇                         ⢸",
+    "⡇                         ⢸",
+    "⡇        NWA SHOP         ⢸",
+    "⡇                         ⢸",
+    "⡇                         ⢸",
+    "⡇                         ⢸",
+    "⣇⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣸"
 
 }
 
@@ -1016,13 +1016,12 @@ local function field(play)
     end
 end
 
-  local function lottery()
-    	alert({"Барыга ушел, приходи позже!"})
+--  local function lottery()
 --   balance(1)
 --   setColorText(nil, 3, "[0x68f029]Мгновенная беспроигрышная лотерея. Цена билета — [0xffffff]" .. priceLottery .. " [0x68f029]!", color.background)
 --     setColorText(19, 4, "[0x68f029]Супер-приз — [0xffffff]" .. superPrize .. " [0x68f029]SkillCoin!", color.background)
 --     field()
- end
+-- end
 
 -- local function playLottery()
 --     if session.balance >= priceLottery then

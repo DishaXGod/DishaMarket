@@ -10,9 +10,9 @@ local terminals = {
 "19cb3c9e-72ec-43be-a2c4-4a9aaf0c6015",
 "2cc1ea1d-7238-48f5-8fd3-4d56d7d85a07",
 "24c2de55-d0cc-44a6-a14a-df3b5c534336",
-"9eace548-8141-4da2-8af1-f1b66c5f9939",
-"3c8b4ab8-5379-4134-b386-9f70a43d3c15",
-"2f87225d-edb2-4ae6-8568-c3cff4245d59"
+"2f87225d-edb2-4ae6-bc09-ba787d055712",
+"f46477ae-2147-4c9e-b63f-00946bb8de36",
+"3c8b4ab8-5379-4134-b386-9f70a43d3c15"
 }
 
 for terminal = 1, #terminals do 

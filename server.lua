@@ -18,7 +18,7 @@ local terminals = {
 	"2cc1ea1d-7238-48f5-8fd3-4d56d7d85a07"
 }
 
-for terminal = 1, #terminals do 
+for terminal = 3, #terminals do 
     terminals[terminals[terminal]], terminals[terminal] = true, nil
 end 
 

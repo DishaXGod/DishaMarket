@@ -231,7 +231,7 @@ local function responseHandler(data, address)
 				send(address, '{code = 422, message = "Bad method"}')
 			end
 		else
-			send(address, '{code = 422, message = "This modem is not whitelisted"}')
+			send(address, '{code = 422, message = "Этот модем не подключен!"}')
 			local logData = "Access attempt! " .. serialization.serialize(userdata)
 			log(logData)
 		end
@@ -248,14 +248,14 @@ end
 
 function start()
 	if ripmarketIsRunning then
-		io.stderr:write("Daemon is running!")
+		io.stderr:write("Сервер запущен!")
 	else
 		ripmarketIsRunning = true
 		if modem.isOpen(port) then
 			io.stderr:write("Port " .. port .. " is busy!")
 		else
 			if modem.open(port) then
-				local success = "NWA-Market started on port " .. port .. "!"
+				local success = "NWA-Market запущен на порту " .. port .. "!"
 				print(success)
 				log(success)
 				event.listen("modem_message", messageHandler)
@@ -268,7 +268,7 @@ end
 
 function stop()
 	if not ripmarketIsRunning then
-		io.stderr:write("Daemon already stopped!")
+		io.stderr:write("Сервер выключен!")
 	else
 		ripmarketIsRunning = false
 		modem.close(port)

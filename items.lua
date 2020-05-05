@@ -48,4 +48,5 @@
 	}
 
     food = {{dmg=0.0, id="minecraft:melon"}, {id="minecraft:apple",dmg=0.0}}
+	}
 }

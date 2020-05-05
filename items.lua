@@ -32,7 +32,17 @@
 	        {text = "Слиток эндериума", BuyPrice = 5000, minCount = 0, maxCount = 16384, needed = 128, fingerprint = {{dmg=76.0,id="ThermalFoundation:material"}}, raw_name = {"item.thermalfoundation.material.ingotenderium"}},
 	        {text = "Череп Скелета-Иссушителя", buyPrice = 2000000, minCount = 0, needed = 128, maxCount = 64, fingerprint = {{dmg=1.0,id="minecraft:skull"}}, raw_name = {"item.skull.wither"}},
 	        {text = "Закаленное железо", buyPrice = 520, minCount = 0, maxCount = 1310720, needed = 128, fingerprint = {{id="ImmersiveEngineering:metal",dmg=7.0}, {dmg=4.0,id="Mekanism:Ingot"}}, raw_name = {"item.immersiveengineering.metal.ingotsteel"}},
-	
+	        {text = "Блок красного камня", sellPrice = 50, minCount = 0, maxCount = 1310720, needed = 128, fingerprint = {{id="minecraft:redstone_block",dmg=0.0}, raw_name = {"redstone_block"}},
+	        {text = "-", buyPrice = 520, minCount = 0, maxCount = 1310720, needed = 128, fingerprint = {{id="-",dmg=7.0},  raw_name = {"-"}},
+	        {text = "-", buyPrice = 520, minCount = 0, maxCount = 1310720, needed = 128, fingerprint = {{id="-",dmg=7.0},  raw_name = {"-"}},			  
+		{text = "-", buyPrice = 520, minCount = 0, maxCount = 1310720, needed = 128, fingerprint = {{id="-",dmg=7.0}, raw_name = {"-"}},
+	        {text = "-", buyPrice = 520, minCount = 0, maxCount = 1310720, needed = 128, fingerprint = {{id="-",dmg=7.0},  raw_name = {"-"}},
+	        {text = "-", buyPrice = 520, minCount = 0, maxCount = 1310720, needed = 128, fingerprint = {{id="-",dmg=7.0},  raw_name = {"-"}},
+	        {text = "-", buyPrice = 520, minCount = 0, maxCount = 1310720, needed = 128, fingerprint = {{id="-",dmg=7.0},  raw_name = {"-"}},
+	        {text = "-", buyPrice = 520, minCount = 0, maxCount = 1310720, needed = 128, fingerprint = {{id="-",dmg=7.0},  raw_name = {"-"}},
+	        {text = "-", buyPrice = 520, minCount = 0, maxCount = 1310720, needed = 128, fingerprint = {{id="-",dmg=7.0},  raw_name = {"-"}},
+	        {text = "-", buyPrice = 520, minCount = 0, maxCount = 1310720, needed = 128, fingerprint = {{id="-",dmg=7.0},  raw_name = {"-"}},
+	        {text = "-", buyPrice = 520, minCount = 0, maxCount = 1310720, needed = 128, fingerprint = {{id="-",dmg=7.0},  raw_name = {"-"}},
 	
 	},
 

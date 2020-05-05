@@ -32,7 +32,7 @@
 	        {text = "Слиток эндериума", BuyPrice = 5000, minCount = 0, maxCount = 16384, needed = 128, fingerprint = {{dmg=76.0,id="ThermalFoundation:material"}}, raw_name = {"item.thermalfoundation.material.ingotenderium"}},
 	        {text = "Закаленное железо", buyPrice = 520, minCount = 0, maxCount = 1310720, needed = 128, fingerprint = {{id="ImmersiveEngineering:metal",dmg=7.0}, {dmg=4.0,id="Mekanism:Ingot"}}, raw_name = {"item.immersiveengineering.metal.ingotsteel"}},
 		{text = "Блок красного камня", sellPrice = 50, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:redstone_block"}}, raw_name = {"redstone_block"}},
-	},
+	}
 
     ore = {
         {text="Железная руда",ratio=2,raw_name={"tile.oreiron"},fingerprint={{dmg=0.0,id="minecraft:iron_ingot"}}},

@@ -33,7 +33,7 @@
 	},
 
     ore = {
-	{text="Дракониевая руда",ratio=2,raw_name={"tile.draconicevolution:draconiumore"},fingerprint={{dmg=0.0,id="DraconicEvolution:draconiumIngot"}}},
+--	{text="Дракониевая руда",ratio=2,raw_name={"tile.draconicevolution:draconiumore"},fingerprint={{dmg=0.0,id="DraconicEvolution:draconiumIngot"}}},
         {text="Железная руда",ratio=2,raw_name={"tile.oreiron"},fingerprint={{dmg=0.0,id="minecraft:iron_ingot"}}},
         {text="Золотая руда",ratio=2,raw_name={"tile.oregold"},fingerprint={{dmg=0.0,id="minecraft:gold_ingot"}}},
         {text="Медная руда",ratio=2,raw_name={"tile.thermalfoundation.ore.copper.name","ic2.blockorecopper"},fingerprint={{dmg=64.0,id="ThermalFoundation:material"},{dmg=0.0,id="IC2:itemIngot"},{dmg=0.0,id="ImmersiveEngineering:metal"},{dmg=5.0,id="Mekanism:Ingot"}}},

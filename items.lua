@@ -1,6 +1,15 @@
 {
     shop = {
-		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="DraconicEvolution:mobSoul"}}, raw_name = {"item.draconicevolution:mobsoul"}},
+		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="DraconicEvolution:mobSoul"}}, raw_name = {"item."}},
+		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="DraconicEvolution:mobSoul"}}, raw_name = {"item."}},
+		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="DraconicEvolution:mobSoul"}}, raw_name = {"item."}},
+		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="DraconicEvolution:mobSoul"}}, raw_name = {"item."}},
+		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="DraconicEvolution:mobSoul"}}, raw_name = {"item."}},
+		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="DraconicEvolution:mobSoul"}}, raw_name = {"item.l"}},
+		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="DraconicEvolution:mobSoul"}}, raw_name = {"item."}},
+		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="DraconicEvolution:mobSoul"}}, raw_name = {"item."}},
+		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="DraconicEvolution:mobSoul"}}, raw_name = {""}},
+		{text = "Адский нарост", buyPrice = 1500, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:nether_wart"}}, raw_name = {"item.netherstalkseed"}},
 		{text = "МЭ Контролер", buyPrice = 1500, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="appliedenergestics2:tile.BlockController"}}, raw_name = {"appliedenergestics2.blockcontroller"}},
 		{text = "Беспроводной соединитель", buyPrice = 8000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="ae2stuff:Wireless"}}, raw_name = {"tile.ae2stuff.wireless"}},
 		{text = "Шерсть", buyPrice = 7500, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:wool"}}, raw_name = {"item.wool"}},

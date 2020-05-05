@@ -1,5 +1,7 @@
 {
     shop = {
+		{text = "Ядро Виверны", buyPrice = 2500000, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="DraconicEvolution:wywrnCore"}}, raw_name = {"item.draconicevolution:wywerncore"}},
+		{text = "Ядро Дракона", buyPrice = 75000, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="DraconicEvolution:DraconicCore"}}, raw_name = {"item.draconicevolution:draconiccore"}},
 		{text = "Блок красного камня", sellPrice = 50, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:redstone_block"}}, raw_name = {"redstone_block"}},
 		{text = "Иридий", buyPrice = 30000, minCount = 0, maxCount = 1310720, fingerprint = {{id="IC2:itemOreIridium",dmg=0.0}}, raw_name = {"ic2.itemoreiridium"}},
 		{text = "Сера", buyPrice = 150, minCount = 0, maxCount = 1310720, fingerprint = {{id="ThermalFoundation:material",dmg=16.0}}, raw_name = {"item.thermalfoundation.material.dustsulfur"}},

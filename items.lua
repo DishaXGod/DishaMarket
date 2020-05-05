@@ -1,5 +1,6 @@
 {
     shop = {
+		{text = "Шерсть", sellPrice = 2500, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:ender_цwool"}}, raw_name = {"item.wool"}},
 		{text = "Ядро Дракона", buyPrice = 75000, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="DraconicEvolution:draconicCore"}}, raw_name = {"item.draconicevolution:draconiccore"}},
 		{text = "Ядро Виверны", buyPrice = 2500000, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="DraconicEvolution:wyvernCore"}}, raw_name = {"item.draconicevolution:wyverncore"}},
 		{text = "Жемчуг Эндера", buyPrice = 5000, sellPrice = 4000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:ender_pearl"}}, raw_name = {"item.enderpearl"}},
@@ -23,7 +24,7 @@
 		{text = "Свинцовый слиток", buyPrice = 175, minCount = 0, maxCount = 1310720,  fingerprint = {{dmg=5.0,id="IC2:itemIngot"}}, raw_name = {"ic2.itemingotlead"}},
 		{text = "Платиновый слиток", buyPrice = 385, minCount = 0, maxCount = 1310720, fingerprint = {{dmg=69.0,id="ThermalFoundation:material"}}, raw_name = {"item.thermalfoundation.material.ingotplatinum"}},
 		{text = "Серебряный слиток", buyPrice = 280, minCount = 0, maxCount = 1310720,  fingerprint = {{dmg=6.0,id="IC2:itemIngot", {dmg=66.0,id="ThermalFoundation:material"}}}, raw_name ={"ic2.itemingotsilver", "item.thermalfoundation.material.ingotsilver"}},
-		{text = "Золотой слиток", buyPrice = 75, minCount = 0, maxCount = 1310720,  fingerprint = {{dmg=0.0,id="minecraft:gold_ingot"}}, raw_name = {"item.ingotgold"}},
+		{text = "Золотой слиток", buyPrice = 50, minCount = 0, maxCount = 1310720,  fingerprint = {{dmg=0.0,id="minecraft:gold_ingot"}}, raw_name = {"item.ingotgold"}},
 		{text = "Железный слиток", buyPrice = 80, minCount = 0, maxCount = 1310720,  fingerprint = {{dmg=0.0,id="minecraft:iron_ingot"}}, raw_name = {"item.ingotiron"}},
 		{text = "Резина", buyPrice = 25, minCount = 0, maxCount = 1310720,  fingerprint = {{dmg=0.0,id="IC2:itemRubber"}}, raw_name = {"item.itemrubber"}},
 		{text = "10.000$", buyPrice = 10000, sellPrice = 10000, minCount = 0, maxCount = 400, fingerprint = {{dmg=0.0,id="customnpcs:npcCoinBronze"}}, raw_name = {"item.npccoinbronze"}},

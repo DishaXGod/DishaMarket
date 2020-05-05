@@ -1,5 +1,8 @@
 {
     shop = {
+		{text = "Душа", sellPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="DraconicEvolution:mobSoul"}}, raw_name = {"item.draconicevolution:mobsoul"}},
+		{text = "МЭ Контролер", sellPrice = 1500, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="appliedenergestics2:tile.BlockController"}}, raw_name = {"appliedenergestics2.blockcontroller"}},
+		{text = "Беспроводной соединитель", sellPrice = 8000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="ae2stuff:Wireless"}}, raw_name = {"tile.ae2stuff.wireless"}},
 		{text = "Шерсть", sellPrice = 2500, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:wool"}}, raw_name = {"item.wool"}},
 		{text = "Ядро Дракона", buyPrice = 75000, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="DraconicEvolution:draconicCore"}}, raw_name = {"item.draconicevolution:draconiccore"}},
 		{text = "Ядро Виверны", buyPrice = 2500000, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="DraconicEvolution:wyvernCore"}}, raw_name = {"item.draconicevolution:wyverncore"}},

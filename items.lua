@@ -61,12 +61,11 @@
     },
 
     ore = {
-	{text="Железная руда",ratio=2,raw_name={"tile."},fingerprint={{dmg=0.0,id=""}}},
+	{text="",ratio=2,raw_name={""},fingerprint={{dmg=0.0,id=""}}},
 	{text="",ratio=2,raw_name={""},fingerprint={{dmg=0.0,id=""}}},
 	{text="Мифриловая руда",ratio=2,raw_name={"tile.thermalfoundation.ore.mithril.name"},fingerprint={{dmg=70.0,id="ThermalFoundation:material"}}},
 	{text="Платиновая руда",ratio=2,raw_name={"tile.thermalfoundation.ore.platinum.name"},fingerprint={{dmg=69.0,id="ThermalFoundation:material"}}},
-	{text="Никелевая руда",ratio=2,raw_name={"tile.thermalfoundation.ore.nickel.name"},fingerprint={{dmg=68.0,id="ThermalFoundation:material"}}},
-		
+	{text="Никелевая руда",ratio=2,raw_name={"tile.thermalfoundation.ore.nickel.name"},fingerprint={{dmg=68.0,id="ThermalFoundation:material"}}},	
         {text="Железная руда",ratio=2,raw_name={"tile.oreiron"},fingerprint={{dmg=0.0,id="minecraft:iron_ingot"}}},
         {text="Золотая руда",ratio=2,raw_name={"tile.oregold"},fingerprint={{dmg=0.0,id="minecraft:gold_ingot"}}},
         {text="Медная руда",ratio=2,raw_name={"tile.thermalfoundation.ore.copper.name","ic2.blockorecopper"},fingerprint={{dmg=64.0,id="ThermalFoundation:material"},{dmg=0.0,id="IC2:itemIngot"},{dmg=0.0,id="ImmersiveEngineering:metal"},{dmg=5.0,id="Mekanism:Ingot"}}},

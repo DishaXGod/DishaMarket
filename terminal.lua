@@ -1196,7 +1196,7 @@ local function blackList(name)
     clear()
     setColorText(nil, 7, "[0x68f029](Не)уважаемый [0xffffff]" .. name, color.background)
     set(10, 8, "Вы внесены в чёрный список этого магазина", color.background, color.lime)
-    set(28, 13, "Удачи!", color.background, color.red)
+    set(28, 13, "Пока-пока!", color.background, color.red)
     discord()
 end
 

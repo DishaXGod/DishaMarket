@@ -41,7 +41,7 @@
         {text="Оловянная руда",ratio=2,raw_name={"tile.thermalfoundation.ore.tin.name","ic2.blockoretin"},fingerprint={{dmg=6.0,id="Mekanism:Ingot"},{dmg=65.0,id="ThermalFoundation:material"},{dmg=1.0,id="IC2:itemIngot"}}},
         {text="Серебряная руда",ratio=2,raw_name={"tile.thermalfoundation.ore.silver.name"},fingerprint={{dmg=66.0,id="ThermalFoundation:material"},{dmg=6.0,id="IC2:itemIngot"}}},
         {text="Осмиевая руда",ratio=2,raw_name={"tile.oreblock.osmiumore"},fingerprint={{dmg=1.0,id="Mekanism:Ingot"}}},
-        {text="Свинцовая руда",ratio=2,raw_name={"tile.thermalfoundation.ore.lead.name","ic2.blockorelead"},fingerprint={{dmg=67.0,id="ThermalFoundation:material"},{dmg=5.0,id="IC2:itemIngot"}}}
+--        {text="Свинцовая руда",ratio=2,raw_name={"tile.thermalfoundation.ore.lead.name","ic2.blockorelead"},fingerprint={{dmg=67.0,id="ThermalFoundation:material"},{dmg=5.0,id="IC2:itemIngot"}}}
 --        {text="Никелевая руда",ratio=2,raw_name={"tile.thermalfoundation.material.ingotnickel"},fingerprint={{dmg=68.0,id="ThermalFoundation:material"}}},
 --        {text="Дракониевая руда",ratio=2,raw_name={"tile.draconicevolution:draconiumore"},fingerprint={{dmg=0.0,id="draconicevolution:draconiumIngot"}}},
 --	{text="Серебряная руда",ratio=2,raw_name={"tile.thermalfoundation.ore.silver.name"},fingerprint={{dmg=6.0,id="ic2.itemingotsilver"}}},

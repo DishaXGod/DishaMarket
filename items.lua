@@ -14,7 +14,7 @@
 		{text = "Земля", buyPrice = 15, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:dirt"}}, raw_name = {"tile.dirt.deffault"}},
 		{text = "Золотая руда", sellPrice = 100, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:gold_ore"}}, raw_name = {"tile.oregold"}},
 		{text = "Железная руда", sellPrice = 100, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:item_ore"}}, raw_name = {"tile.oreiron"}},
-		{text = "Свето камень", buyPrice = 420, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:Glowstone"}}, raw_name = {"tile.glowstone"}},
+		{text = "Свето камень", buyPrice = 420, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:glowstone"}}, raw_name = {"tile.lightgem"}},
 		{text = "Алмазный бур", buyPrice = 50000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=26.0,id="IC2:itemToolDDrill"}}, raw_name = {"ic2.itemtoolddrill"}},
 		{text = "Латекс", buyPrice = 75, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="IC2:itemHarz"}}, raw_name = {"ic2.itemharz"}},
 		{text = "Адский камень", buyPrice = 50, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:netherrack"}}, raw_name = {"tile.hellrock"}},

@@ -35,7 +35,7 @@
         {text="Медная руда",ratio=2,raw_name={"tile.thermalfoundation.ore.copper.name","ic2.blockorecopper"},fingerprint={{dmg=64.0,id="ThermalFoundation:material"},{dmg=0.0,id="IC2:itemIngot"},{dmg=0.0,id="ImmersiveEngineering:metal"},{dmg=5.0,id="Mekanism:Ingot"}}},
         {text="Оловянная руда",ratio=2,raw_name={"tile.thermalfoundation.ore.tin.name","ic2.blockoretin"},fingerprint={{dmg=6.0,id="Mekanism:Ingot"},{dmg=65.0,id="ThermalFoundation:material"},{dmg=1.0,id="IC2:itemIngot"}}},
         {text="Серебряная руда",ratio=2,raw_name={"tile.thermalfoundation.ore.silver.name"},fingerprint={{dmg=66.0,id="ThermalFoundation:material"},{dmg=6.0,id="IC2:itemIngot"}}},
-        {text="Свинцовая руда",ratio=2,raw_name={"tile.thermalfoundation.ore.lead.name","ic2.blockorelead"},fingerprint={{dmg=67.0,id="ThermalFoundation:material"},{dmg=5.0,id="IC2:itemIngot"}}}
+        {text="Свинцовая руда",ratio=2,raw_name={"tile.thermalfoundation.ore.lead.name","ic2.blockorelead"},fingerprint={{dmg=67.0,id="ThermalFoundation:material"},{dmg=5.0,id="IC2:itemIngot"}}},
     },
 
     food = {{dmg=0.0, id="minecraft:melon"}}

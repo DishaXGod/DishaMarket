@@ -8,7 +8,7 @@
 		{text = "Блок создания", buyPrice = 1000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="appliedenergestics2:tile.BlockCraftingUnit"}}, raw_name = {"tile.appliedenergestics2.blockcraftingunit"}},
 		{text = "Осколок хаоса", buyPrice = 100000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="DraconicEvolution:chaousShard"}}, raw_name = {"item.draconicEvolution:chaousshard"}},
 		{text = "Слиток никеля", buyPrice = 175, minCount = 0, maxCount = 50000, fingerprint = {{dmg=68.0,id="ThermalFoundation:material"}}, raw_name = {"item.thermalfoundation.material.ingotnickel"}},
-		{text = "Пульсирующая сеть", buyPrice = 50000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=1.0,id="Forestry:craftingmaterial"}}, raw_name = {"item.craftingmaterial.pulsatingmesh"}},
+		{text = "Пульсирующая сеть", buyPrice = 50000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=1.0,id="Forestry:craftingMaterial"}}, raw_name = {"item.craftingmaterial.pulsatingmesh"}},
 		{text = "Небесный камень", buyPrice = 500, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="appliedenergestics2:BlockSkyStone"}}, raw_name = {"item.appliedenergestics2.blockskystone"}},
 		{text = "Земля с травой", buyPrice = 30, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:grass"}}, raw_name = {"tile.grass"}},
 		{text = "Земля", buyPrice = 15, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:dirt"}}, raw_name = {"tile.dirt.deffault"}},

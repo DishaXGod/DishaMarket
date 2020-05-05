@@ -27,7 +27,15 @@
 		{text = "Дуб", buyPrice = 50, minCount = 0, maxCount = 1310720, fingerprint = {{dmg=0.0,id="minecraft:log"}}, raw_name = {"tile.log.oak"}},
 		{text = "Драконий слиток", buyPrice = 700, minCount = 0, maxCount = 1310720, fingerprint = {{dmg=0.0,id="DraconicEvolution:draconiumIngot"}}, raw_name = {"item.draconicevolution:draconiumingot"}},
 		{text = "Урановая руда", buyPrice = 1440, minCount = 0, maxCount = 1310720, fingerprint = {{dmg=0.0,id="IC2:blockOreUran"}}, raw_name = {"ic2.blockoreuran"}},
-    },
+            {text = "Скопление пыльцы", buyPrice = 300, sellPrice = 600, minCount = 0, maxCount = 1310720, fingerprint = {{id="Forestry:pollen",dmg=0.0}}, raw_name = {"item.for.pollen.normal"}},
+		{text = "Маточное молочко", buyPrice = 300, sellPrice = 600, minCount = 0, maxCount = 1310720, fingerprint = {{id="Forestry:royalJelly",dmg=0.0}}, raw_name = {"item.for.royaljelly"}},
+	        {text = "Слиток эндериума", BuyPrice = 5000, minCount = 0, maxCount = 16384, needed = 128, fingerprint = {{dmg=76.0,id="ThermalFoundation:material"}}, raw_name = {"item.thermalfoundation.material.ingotenderium"}},
+        {text = "Ускоритель", buyPrice = 1200, minCount = 0, needed = 32, maxCount = 16384, fingerprint = {{dmg=0.0,id="IC2:upgradeModule"}}, raw_name = {"ic2.overclockerupgrade"}},
+	        {text = "Череп Скелета-Иссушителя", buyPrice = 2000000, minCount = 0, needed = 128, maxCount = 64, fingerprint = {{dmg=1.0,id="minecraft:skull"}}, raw_name = {"item.skull.wither"}},
+	        {text = "Закаленное железо", buyPrice = 520, minCount = 0, maxCount = 1310720, needed = 128, fingerprint = {{id="ImmersiveEngineering:metal",dmg=7.0}, {dmg=4.0,id="Mekanism:Ingot"}}, raw_name = {"item.immersiveengineering.metal.ingotsteel"}},
+	
+	
+	},
 
     ore = {
         {text="Железная руда",ratio=2,raw_name={"tile.oreiron"},fingerprint={{dmg=0.0,id="minecraft:iron_ingot"}}},

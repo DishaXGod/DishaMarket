@@ -1,6 +1,6 @@
 {
     shop = {
-{text = "Иридий", buyPrice = 30000, minCount = 0, maxCount = 1310720, fingerprint = {{id="IC2:itemOreIridium",dmg=0.0}}, raw_name = {"ic2.itemoreiridium"}},
+		{text = "Иридий", buyPrice = 30000, minCount = 0, maxCount = 1310720, fingerprint = {{id="IC2:itemOreIridium",dmg=0.0}}, raw_name = {"ic2.itemoreiridium"}},
 		{text = "Сера", buyPrice = 150, minCount = 0, maxCount = 1310720, fingerprint = {{id="ThermalFoundation:material",dmg=16.0}}, raw_name = {"item.thermalfoundation.material.dustsulfur"}},
 		{text = "Ускоритель", buyPrice = 1200, minCount = 0, maxCount = 1310720, fingerprint = {{dmg=0.0,id="IC2:upgradeModule"}}, raw_name = {"ic2.overclockerupgrade"}},
 		{text = "Кварц", buyPrice = 140, minCount = 0, maxCount = 1310720, fingerprint = {{dmg=0.0,id="minecraft:quartz"}}, raw_name = {"item.netherquartz"}},
@@ -23,16 +23,12 @@
 		{text = "Резина", buyPrice = 25, minCount = 0, maxCount = 1310720,  fingerprint = {{dmg=0.0,id="IC2:itemRubber"}}, raw_name = {"item.itemrubber"}},
 		{text = "10.000$", buyPrice = 10000, sellPrice = 10000, minCount = 0, maxCount = 400, fingerprint = {{dmg=0.0,id="customnpcs:npcCoinBronze"}}, raw_name = {"item.npccoinbronze"}},
 		{text = "100.000$", buyPrice = 100000, sellPrice = 100000, minCount = 0, maxCount = 400, fingerprint = {{dmg=0.0,id="customnpcs:npcCoinDiamond"}}, raw_name = {"item.npccoindiamond"}},
-		{text = "Тёмный кофе", buyPrice = 850, minCount = 0, maxCount = 1310720, fingerprint = {{dmg=1.0,id="IC2:itemMugCoffee"}}, raw_name = {"ic2.itemmugcoffee_1"}},
+		{text = "Горячий кофе", buyPrice = 850, minCount = 0, maxCount = 1310720, fingerprint = {{dmg=1.0,id="IC2:itemMugCoffee"}}, raw_name = {"ic2.itemmugcoffee_1"}},
 		{text = "Дуб", buyPrice = 50, minCount = 0, maxCount = 1310720, fingerprint = {{dmg=0.0,id="minecraft:log"}}, raw_name = {"tile.log.oak"}},
 		{text = "Драконий слиток", buyPrice = 700, minCount = 0, maxCount = 1310720, fingerprint = {{dmg=0.0,id="DraconicEvolution:draconiumIngot"}}, raw_name = {"item.draconicevolution:draconiumingot"}},
 		{text = "Урановая руда", buyPrice = 1440, minCount = 0, maxCount = 1310720, fingerprint = {{dmg=0.0,id="IC2:blockOreUran"}}, raw_name = {"ic2.blockoreuran"}},
-          	{text = "Скопление пыльцы", buyPrice = 600, sellPrice = 300, minCount = 0, maxCount = 1310720, fingerprint = {{id="Forestry:pollen",dmg=0.0}}, raw_name = {"item.for.pollen.normal"}},
-		{text = "Маточное молочко", buyPrice = 600, sellPrice = 300, minCount = 0, maxCount = 1310720, fingerprint = {{id="Forestry:royalJelly",dmg=0.0}}, raw_name = {"item.for.royaljelly"}},
-	        {text = "Слиток эндериума", BuyPrice = 5000, minCount = 0, maxCount = 16384, needed = 128, fingerprint = {{dmg=76.0,id="ThermalFoundation:material"}}, raw_name = {"item.thermalfoundation.material.ingotenderium"}},
-	        {text = "Закаленное железо", buyPrice = 520, minCount = 0, maxCount = 1310720, needed = 128, fingerprint = {{id="ImmersiveEngineering:metal",dmg=7.0}, {dmg=4.0,id="Mekanism:Ingot"}}, raw_name = {"item.immersiveengineering.metal.ingotsteel"}},
 		{text = "Блок красного камня", sellPrice = 50, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:redstone_block"}}, raw_name = {"redstone_block"}},
-	}
+	},
 
     ore = {
         {text="Железная руда",ratio=2,raw_name={"tile.oreiron"},fingerprint={{dmg=0.0,id="minecraft:iron_ingot"}}},
@@ -40,13 +36,8 @@
         {text="Медная руда",ratio=2,raw_name={"tile.thermalfoundation.ore.copper.name","ic2.blockorecopper"},fingerprint={{dmg=64.0,id="ThermalFoundation:material"},{dmg=0.0,id="IC2:itemIngot"},{dmg=0.0,id="ImmersiveEngineering:metal"},{dmg=5.0,id="Mekanism:Ingot"}}},
         {text="Оловянная руда",ratio=2,raw_name={"tile.thermalfoundation.ore.tin.name","ic2.blockoretin"},fingerprint={{dmg=6.0,id="Mekanism:Ingot"},{dmg=65.0,id="ThermalFoundation:material"},{dmg=1.0,id="IC2:itemIngot"}}},
         {text="Серебряная руда",ratio=2,raw_name={"tile.thermalfoundation.ore.silver.name"},fingerprint={{dmg=66.0,id="ThermalFoundation:material"},{dmg=6.0,id="IC2:itemIngot"}}},
-        {text="Осмиевая руда",ratio=2,raw_name={"tile.oreblock.osmiumore"},fingerprint={{dmg=1.0,id="Mekanism:Ingot"}}},
---        {text="Свинцовая руда",ratio=2,raw_name={"tile.thermalfoundation.ore.lead.name","ic2.blockorelead"},fingerprint={{dmg=67.0,id="ThermalFoundation:material"},{dmg=5.0,id="IC2:itemIngot"}}}
---        {text="Никелевая руда",ratio=2,raw_name={"tile.thermalfoundation.material.ingotnickel"},fingerprint={{dmg=68.0,id="ThermalFoundation:material"}}},
---        {text="Дракониевая руда",ratio=2,raw_name={"tile.draconicevolution:draconiumore"},fingerprint={{dmg=0.0,id="draconicevolution:draconiumIngot"}}},
---	{text="Серебряная руда",ratio=2,raw_name={"tile.thermalfoundation.ore.silver.name"},fingerprint={{dmg=6.0,id="ic2.itemingotsilver"}}},
-	}
+        {text="Свинцовая руда",ratio=2,raw_name={"tile.thermalfoundation.ore.lead.name","ic2.blockorelead"},fingerprint={{dmg=67.0,id="ThermalFoundation:material"},{dmg=5.0,id="IC2:itemIngot"}}}
+    },
 
-    food = {{dmg=0.0, id="minecraft:melon"}, {id="minecraft:apple",dmg=0.0}}
-	}
+    food = {{dmg=0.0, id="minecraft:melon"}}
 }

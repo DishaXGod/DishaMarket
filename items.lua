@@ -45,7 +45,7 @@
 --        {text="Никелевая руда",ratio=2,raw_name={"tile.thermalfoundation.material.ingotnickel"},fingerprint={{dmg=68.0,id="ThermalFoundation:material"}}},
 --        {text="Дракониевая руда",ratio=2,raw_name={"tile.draconicevolution:draconiumore"},fingerprint={{dmg=0.0,id="draconicevolution:draconiumIngot"}}},
 --	{text="Серебряная руда",ratio=2,raw_name={"tile.thermalfoundation.ore.silver.name"},fingerprint={{dmg=6.0,id="ic2.itemingotsilver"}}},
-	},
+	}
 
     food = {{dmg=0.0, id="minecraft:melon"}, {id="minecraft:apple",dmg=0.0}}
 }

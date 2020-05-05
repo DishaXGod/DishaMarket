@@ -12,7 +12,8 @@ local terminals = {
 "24c2de55-d0cc-44a6-a14a-df3b5c534336",
 "47c48502-4d67-46d3-b818-9fa725932b29",
 "e57b4c80-1600-4faf-9c29-80ad7a21dbae",
-"3c8b4ab8-5379-4134-b386-9f70a43d3c15"
+"3c8b4ab8-5379-4134-b386-9f70a43d3c15",
+"f46477ae-2147-4c9e-b63f-00946bb8de36"
 }
 
 for terminal = 1, #terminals do 

@@ -28,7 +28,7 @@
 		{text = "Шерсть", buyPrice = 5000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:wool"}}, raw_name = {"item.wool"}},
 		{text = "Ядро Дракона", buyPrice = 75000, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="DraconicEvolution:draconicCore"}}, raw_name = {"item.draconicevolution:draconiccore"}},
 		{text = "Ядро Виверны", buyPrice = 2500000, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="DraconicEvolution:wyvernCore"}}, raw_name = {"item.draconicevolution:wyverncore"}},
-		{text = "Жемчуг Эндера", buyPrice = 4000, sellPrice = 50000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:ender_pearl"}}, raw_name = {"item.enderpearl"}},
+		{text = "Жемчуг Эндера", buyPrice = 4000, sellPrice = 5000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:ender_pearl"}}, raw_name = {"item.enderpearl"}},
 		{text = "Ядро Дракона", buyPrice = 75000, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="DraconicEvolution:DraconicCore"}}, raw_name = {"item.draconicevolution:draconiccore"}},
 		{text = "Блок красного камня", sellPrice = 50, minCount = 0, maxCount = 10000, fingerprint = {{dmg=0.0,id="minecraft:redstone_block"}}, raw_name = {"redstone_block"}},
 		{text = "Иридий", buyPrice = 30000, minCount = 0, maxCount = 1310720, fingerprint = {{id="IC2:itemOreIridium",dmg=0.0}}, raw_name = {"ic2.itemoreiridium"}},
@@ -62,7 +62,7 @@
 
     ore = {
 	{text="Железная руда",ratio=2,raw_name={"tile."},fingerprint={{dmg=0.0,id=""}}},
-	{text="Песок>Стекло",ratio=1,raw_name={"tile.sand.default"},fingerprint={{dmg=0.0,id="minecraft:glass"}}},
+	{text="",ratio=2,raw_name={""},fingerprint={{dmg=0.0,id=""}}},
 	{text="Мифриловая руда",ratio=2,raw_name={"tile.thermalfoundation.ore.mithril.name"},fingerprint={{dmg=70.0,id="ThermalFoundation:material"}}},
 	{text="Платиновая руда",ratio=2,raw_name={"tile.thermalfoundation.ore.platinum.name"},fingerprint={{dmg=69.0,id="ThermalFoundation:material"}}},
 	{text="Никелевая руда",ratio=2,raw_name={"tile.thermalfoundation.ore.nickel.name"},fingerprint={{dmg=68.0,id="ThermalFoundation:material"}}},

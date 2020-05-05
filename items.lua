@@ -28,7 +28,7 @@
 		{text = "Шерсть", buyPrice = 5000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:wool"}}, raw_name = {"item.wool"}},
 		{text = "Ядро Дракона", buyPrice = 75000, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="DraconicEvolution:draconicCore"}}, raw_name = {"item.draconicevolution:draconiccore"}},
 		{text = "Ядро Виверны", buyPrice = 2500000, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="DraconicEvolution:wyvernCore"}}, raw_name = {"item.draconicevolution:wyverncore"}},
-		{text = "Жемчуг Эндера", buyPrice = 5000, sellPrice = 10000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:ender_pearl"}}, raw_name = {"item.enderpearl"}},
+		{text = "Жемчуг Эндера", buyPrice = 4000, sellPrice = 50000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:ender_pearl"}}, raw_name = {"item.enderpearl"}},
 		{text = "Ядро Дракона", buyPrice = 75000, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="DraconicEvolution:DraconicCore"}}, raw_name = {"item.draconicevolution:draconiccore"}},
 		{text = "Блок красного камня", sellPrice = 50, minCount = 0, maxCount = 10000, fingerprint = {{dmg=0.0,id="minecraft:redstone_block"}}, raw_name = {"redstone_block"}},
 		{text = "Иридий", buyPrice = 30000, minCount = 0, maxCount = 1310720, fingerprint = {{id="IC2:itemOreIridium",dmg=0.0}}, raw_name = {"ic2.itemoreiridium"}},

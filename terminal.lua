@@ -172,9 +172,9 @@ end
 local function outOfService(reason)
     active = false
     clear()
-    set(8, 7, "Магазин не работает, приносим свои извинения за", color.background, color.lime)
-    set(18, 8, "предоставленные неудобства", color.background, color.lime)
-    set(23, 13, "OUT OF SERVICE!", color.background, color.red)
+    set(8, 7, "Магазин не работает, закрыто!", color.background, color.lime)
+    set(18, 8, "Товара нет! И не будет!", color.background, color.lime)
+    set(23, 13, "Ты еще сдесь?!", color.background, color.red)
     if reason then
         set(nil, 16, "Причина: " .. reason, color.background, color.gray)
     end

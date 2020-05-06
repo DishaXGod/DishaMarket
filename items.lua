@@ -4,7 +4,7 @@
 		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
 		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
 		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
-		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
+		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="DraconicEvolution:draconiumEnergyCore"}}, raw_name = {"item.draconicevolution:draconiumenergycore0"}},
 		{text = "Звезда Ада", buyPrice = 2250000, minCount = 0, maxCount = 1500, fingerprint = {{dmg=0.0,id="minecraft:nether_star"}}, raw_name = {"item.netherstar"}},
 		{text = "Динамитная шашка", buyPrice = 1500, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="AdditionMod:ItemBoomBoom"}}, raw_name = {"item.boomboom"}},
 		{text = "Капсула с материей", buyPrice = 150000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=3.0,id="IC2:itemCellEmpty"}}, raw_name = {"ic2.itemcelluumatter"}},

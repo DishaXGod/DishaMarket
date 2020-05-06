@@ -64,7 +64,7 @@
 		{text = "Блок красного камня", sellPrice = 50, minCount = 0, maxCount = 10000, fingerprint = {{dmg=0.0,id="minecraft:redstone_block"}}, raw_name = {"redstone_block"}},
 		{text = "Иридий", buyPrice = 30000, minCount = 0, maxCount = 10000, fingerprint = {{id="IC2:itemOreIridium",dmg=0.0}}, raw_name = {"ic2.itemoreiridium"}},
 		{text = "Сера", buyPrice = 150, minCount = 0, maxCount = 10000, fingerprint = {{id="ThermalFoundation:material",dmg=16.0}}, raw_name = {"item.thermalfoundation.material.dustsulfur", "ic2.itemdustsulfur"}},
-		{text = "Улучшение "Ускоритель"", buyPrice = 1200, minCount = 0, maxCount = 5000, fingerprint = {{dmg=0.0,id="IC2:upgradeModule"}}, raw_name = {"ic2.overclockerupgrade"}},
+		{text = "Улучшение (Ускоритель)", buyPrice = 1200, minCount = 0, maxCount = 5000, fingerprint = {{dmg=0.0,id="IC2:upgradeModule"}}, raw_name = {"ic2.overclockerupgrade"}},
 		{text = "Кварц", buyPrice = 140, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="minecraft:quartz"}}, raw_name = {"item.netherquartz"}},
 		{text = "Укр. иридиевая пластина", buyPrice = 120000, minCount = 0, maxCount = 5000, fingerprint = {{id="IC2:itemPartIridium",dmg=0.0}}, raw_name = {"ic2.itempartiridium"}},
 		{text = "Изумруд", buyPrice = 560, minCount = 0, maxCount = 5000, fingerprint = {{id="minecraft:emerald",dmg=0.0}}, raw_name = {"item.emerald"}},

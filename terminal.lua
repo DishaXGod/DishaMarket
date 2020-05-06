@@ -970,7 +970,7 @@ local function drawOreList()
             local ingots = getAllItemCount(items.ore[item].fingerprint)
 
             if ingots > 0 then
-                setColorText(nil, counter + 9, "[0x4260f5]" .. items.ore[item].text .. "([0xffffff]x" .. items.ore[item].ratio .. "[0x4260f5]): [0xffffff]" .. math.floor(ingots / items.ore[item].ratio) .. " шт", color.background)
+                setColorText(nil, counter + 9, "[0xFFD700]" .. items.ore[item].text .. "([0xffffff]x" .. items.ore[item].ratio .. "[0xFFD700]): [0x8B0000]" .. math.floor(ingots / items.ore[item].ratio) .. " шт", color.background)
                 counter = counter + 1
             end
         end

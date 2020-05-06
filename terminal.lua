@@ -931,10 +931,10 @@ end
 local function buyItem()
     balance(1)
     setColorText(2, 3, "[0x46c8e3]Имя предмета: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.text , color.background)
-    setColorText(44, 3, "[0x46c8e3]Доступно: [0xffffff]" .. math.floor(guiVariables[guiPath[#guiPath]].item.count), color.background)
+    setColorText(44, 3, "[0x46c8e3]Доступно: [0x46c8e3]" .. math.floor(guiVariables[guiPath[#guiPath]].item.count), color.background)
     setColorText(48, 5, "[0x46c8e3]Цена: [0x8B0000]" .. guiVariables[guiPath[#guiPath]].item.buyPrice, color.background)
-    set(2, 5, "На сумму:[0x46c8e3]", color.background, color.lime)
-    set(2, 7, "Кол-во:[0x46c8e3]", color.background, color.lime)
+    set(2, 5, "На сумму[0x46c8e3]:", color.background, color.lime)
+    set(2, 7, "Кол-во[0x46c8e3]:", color.background, color.lime)
     amount(false, true)
 end
 

@@ -930,11 +930,11 @@ end
 
 local function buyItem()
     balance(1)
-    setColorText(2, 3, "[0x46c8e3]Имя предмета: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.text , color.background)
-    setColorText(44, 3, "[0x46c8e3]Доступно: [0x46c8e3]" .. math.floor(guiVariables[guiPath[#guiPath]].item.count), color.background)
+    setColorText(2, 3, "[0x46c8e3]Имя предмета: [0xFFD700]" .. guiVariables[guiPath[#guiPath]].item.text , color.background)
+    setColorText(44, 3, "[0x46c8e3]Доступно: [0xFFD700]" .. math.floor(guiVariables[guiPath[#guiPath]].item.count), color.background)
     setColorText(48, 5, "[0x46c8e3]Цена: [0x8B0000]" .. guiVariables[guiPath[#guiPath]].item.buyPrice, color.background)
-    set(2, 5, "На сумму[0x46c8e3]:", color.background, color.lime)
-    set(2, 7, "Кол-во[0x46c8e3]:", color.background, color.lime)
+    set(2, 5, "На сумму:", color.background, color.lime)
+    set(2, 7, "Кол-во:", color.background, color.lime)
     amount(false, true)
 end
 
@@ -947,8 +947,8 @@ end
 
 local function sellItem()
     balance(1)
-    setColorText(2, 3, "[0x46c8e3]Имя предмета: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.text, color.background, color.lime, color.background)
-    setColorText(48, 3, "[0x46c8e3]Цена: [0x8B0000]" .. guiVariables[guiPath[#guiPath]].item.sellPrice, color.background, color.lime, color.background)
+    setColorText(2, 3, "[0x46c8e3]Имя предмета: [0xFFD700]" .. guiVariables[guiPath[#guiPath]].item.text, color.background, color.lime, color.background)
+    setColorText(48, 3, "[0x46c8e3]Цена: [0xFFD700]" .. guiVariables[guiPath[#guiPath]].item.sellPrice, color.background, color.lime, color.background)
     setColorText(2, 5, "[0x46c8e3]Можно продать: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.leftCount, color.background)
     set(15, 7, "Сканировать на наличие предмета:", color.background, color.orange)
 end

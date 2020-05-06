@@ -86,7 +86,7 @@
 		{text = "10.000$(SkillCoin)", buyPrice = 10000, sellPrice = 10000, minCount = 0, maxCount = 500, fingerprint = {{dmg=0.0,id="customnpcs:npcCoinBronze"}}, raw_name = {"item.npccoinbronze"}},
 		{text = "100.000$(SkillCoin)", buyPrice = 100000, sellPrice = 100000, minCount = 0, maxCount = 500, fingerprint = {{dmg=0.0,id="customnpcs:npcCoinDiamond"}}, raw_name = {"item.npccoindiamond"}},
 		{text = "Горячий кофе", buyPrice = 850, minCount = 0, maxCount = 1310720, fingerprint = {{dmg=1.0,id="IC2:itemMugCoffee"}}, raw_name = {"ic2.itemmugcoffee_1"}},
-		{text = "Дуб", buyPrice = 50, minCount = 0, maxCount = 10000, fingerprint = {{dmg=0.0,id="minecraft:log"}}, raw_name = {"tile.log.oak"}},
+		{text = "Дуб", sellPrice = 50, minCount = 0, maxCount = 10000, fingerprint = {{dmg=0.0,id="minecraft:log"}}, raw_name = {"tile.log.oak"}},
 		{text = "Слиток Дракония", buyPrice = 700, minCount = 0, maxCount = 10000, fingerprint = {{dmg=0.0,id="DraconicEvolution:draconiumIngot"}}, raw_name = {"item.draconicevolution:draconiumingot"}},
 		{text = "Урановая руда", buyPrice = 1440, minCount = 0, maxCount = 10000, fingerprint = {{dmg=0.0,id="IC2:blockOreUran"}}, raw_name = {"ic2.blockoreuran"}},
     },

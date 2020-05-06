@@ -48,7 +48,7 @@
 		{text = "Свето камень", buyPrice = 420, minCount = 0, maxCount = 10000, fingerprint = {{dmg=0.0,id="minecraft:glowstone"}}, raw_name = {"tile.lightgem"}},
 		{text = "Алмазный бур", buyPrice = 50000, minCount = 0, maxCount = 1000, fingerprint = {{dmg=26.0,id="IC2:itemToolDDrill"}}, raw_name = {"ic2.itemtoolddrill"}},
 		{text = "Латекс", buyPrice = 75, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="IC2:itemHarz"}}, raw_name = {"ic2.itemharz"}},
-		{text = "Адский камень", buyPrice = 50, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="minecraft:netherrack"}}, raw_name = {"tile.hellrock"}},
+		{text = "Адский камень", buyPrice = 200, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="minecraft:netherrack"}}, raw_name = {"tile.hellrock"}},
 		{text = "Плоскость истребления", buyPrice = 1000, minCount = 0, maxCount = 1000, fingerprint = {{dmg=300.0,id="appliedenergestics2:item.ItemMultiPart"}}, raw_name = {"item.appliedenergestics2:itempart.annihilationplane"}},
 		{text = "Продвинутый высекатель", buyPrice = 5000, minCount = 0, maxCount = 1000, fingerprint = {{dmg=0.0,id="ae2stuff:Inscriber"}}, raw_name = {"tile.ae2stuff:inscriber"}},
 		{text = "Шина Импорта", buyPrice = 1000, minCount = 0, maxCount = 1000, fingerprint = {{dmg=240.0,id="appliedenergestics2:item.ItemMultiPart"}}, raw_name = {"item.appliedenergestics2:itempart.importbus"}},

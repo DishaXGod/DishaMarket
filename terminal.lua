@@ -1002,7 +1002,7 @@ local function getFood()
        haveFood = true
        requestWithData(nil, {method = "merge", toMerge = {foodTime = session.foodTime}, name = session.name})
       fill(18, 7, 26, 1, " ", color.background)
-      set(21, 7, "[0x8B0000]Не обляпайся!", color.background, 0xffffff)
+      set(21, 7, "Не обляпайся!", color.background, 0x8B0000)
        nextFood()
         drawButton("getFood")
    else

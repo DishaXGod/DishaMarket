@@ -67,14 +67,10 @@ local pimGeometry = {
     x = 23,
     y = 7,
 
-    "⡏⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⢹",
-    "⡇              ⢸",
-    "⡇              ⢸",
-    "⡇      NWA     ⢸",
-    "⡇     SHOP     ⢸",
-    "⡇              ⢸",
-    "⡇              ⢸",
-    "⣇⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣸"
+"._________.",
+"*/ ///______I",
+") . /_(_)",
+"/__/",
 
 }
 
@@ -1438,7 +1434,7 @@ function login(name)
 
         if active then
             clear()
-            setColorText(18, 2, "[0xffffff]Приветствуем в [0x8B0000]NWA-Shop[0xffffff]!", color.background)
+            setColorText(18, 2, "[0xffffff]Оружейный магазин [0x8B0000]NWA-Shop[0xffffff]!", color.background)
             setColorText(17, 5, "[0xffffff]Встаньте на [0x8B0000]PIM[0xffffff], чтобы войти", color.background)
             discord()
             drawPim()

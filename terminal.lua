@@ -54,9 +54,9 @@ local color = {
     lightGray = 0xA9A9A9,
     blackGray = 0x1a1a1a,
     lime = 0x46c8e3,
-    blackLime = 0x4cb01e,
+    blackLime = 0x46c8e3,
     orange = 0x46c8e3,
-    blackOrange = 0xc49029,
+    blackOrange = 0x46c8e3,
     blue = 0x4260f5,
     blackBlue = 0x273ba1,
     red = 0xff0000
@@ -1065,10 +1065,10 @@ end
 -- end
 
 local function account()
-    setColorText(nil, 7, "[0x68f029]" .. session.name .. ":", color.background)
+    setColorText(nil, 7, "[0x8B0000]" .. session.name .. ":", color.background)
     balance(9)
-    setColorText(nil, 10, "[0x68f029]Совершенно транзакций: [0xffffff]" .. session.transactions, color.background)
-    setColorText(15, 11, "[0x68f029]Регистрация: [0xffffff]" .. session.regTime, color.background)
+    setColorText(nil, 10, "[0x46c8e3]Совершенно транзакций: [0x8B0000]" .. session.transactions, color.background)
+    setColorText(15, 11, "[0x46c8e3]Регистрация: [0x8B0000]" .. session.regTime, color.background)
 end
 
 local function drawPage()

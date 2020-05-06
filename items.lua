@@ -75,7 +75,7 @@
         	{text = "Лог. пресс для высекателя", buyPrice = 15000, minCount = 0, maxCount = 500, fingerprint = {{id="appliedenergistics2:item.ItemMultiMaterial",dmg=15.0}}, raw_name = {"item.appliedenergistics2.itemmaterial.logicprocessorpress"}},
         	{text = "Крем. пресс для высекателя", buyPrice = 15000, minCount = 0, maxCount = 500, fingerprint = {{id="appliedenergistics2:item.ItemMultiMaterial",dmg=19.0}}, raw_name = {"item.appliedenergistics2.itemmaterial.siliconpress"}},
         	{text = "Светопыль", buyPrice = 300, minCount = 0, maxCount = 15000, fingerprint = {{id="minecraft:glowstone_dust",dmg=0.0}}, raw_name = {"item.yellowdust"}},
-		{text = "Красная пыль", buyPrice = 5, minCount = 0, maxCount = 15000, fingerprint = {{id="minecraft:redstone",dmg=0.0}}, raw_name = {"item.redstone"}},
+		{text = "Красная пыль", buyPrice = 15, minCount = 0, maxCount = 15000, fingerprint = {{id="minecraft:redstone",dmg=0.0}}, raw_name = {"item.redstone"}},
 		{text = "Алмаз", buyPrice = 450, minCount = 0, maxCount = 5000, fingerprint = {{dmg=0.0,id="minecraft:diamond"}}, raw_name = {"item.diamond"}},
 		{text = "Слиток Свинца", buyPrice = 175, minCount = 0, maxCount = 15000,  fingerprint = {{dmg=5.0,id="IC2:itemIngot"}}, raw_name = {"ic2.itemingotlead"}},
 		{text = "Слиток Платины", buyPrice = 385, minCount = 0, maxCount = 15000, fingerprint = {{dmg=69.0,id="ThermalFoundation:material"}}, raw_name = {"item.thermalfoundation.material.ingotplatinum"}},

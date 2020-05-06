@@ -51,7 +51,7 @@ local color = {
     pim = 0x46c8e3,
 
     gray = 0x303030,
-    lightGray = 0x999999,
+    lightGray = 0xA9A9A9,
     blackGray = 0x1a1a1a,
     lime = 0x46c8e3,
     blackLime = 0x4cb01e,

@@ -65,7 +65,7 @@
 		{text = "Иридий", buyPrice = 30000, minCount = 0, maxCount = 10000, fingerprint = {{id="IC2:itemOreIridium",dmg=0.0}}, raw_name = {"ic2.itemoreiridium"}},
 		{text = "Сера", buyPrice = 150, minCount = 0, maxCount = 10000, fingerprint = {{id="ThermalFoundation:material",dmg=16.0}}, raw_name = {"item.thermalfoundation.material.dustsulfur"}},
 		{text = "Ускоритель", buyPrice = 1200, minCount = 0, maxCount = 5000, fingerprint = {{dmg=0.0,id="IC2:upgradeModule"}}, raw_name = {"ic2.overclockerupgrade"}},
-		{text = "Кварц", buyPrice = 140, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="minecraft:quartz"}}, raw_name = {"item.netherquartz"}},
+		{text = "Кварц", buyPrice = 140, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="minecraft:quartz"}}, raw_name = {"item.netherquartz", "ic2.itemdustsulfur"}},
 		{text = "Укр. иридиевая пластина", buyPrice = 120000, minCount = 0, maxCount = 5000, fingerprint = {{id="IC2:itemPartIridium",dmg=0.0}}, raw_name = {"ic2.itempartiridium"}},
 		{text = "Изумруд", buyPrice = 560, minCount = 0, maxCount = 5000, fingerprint = {{id="minecraft:emerald",dmg=0.0}}, raw_name = {"item.emerald"}},
 		{text = "Череп Скелета-Иссушителя", buyPrice = 2000000, minCount = 0, needed = 128, maxCount = 500, fingerprint = {{dmg=1.0,id="minecraft:skull"}}, raw_name = {"item.skull.wither"}},

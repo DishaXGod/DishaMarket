@@ -16,7 +16,7 @@
 		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
 		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
 		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
-		{text = "МФЭ", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=1.0,id="IC2:blockElectric"}}, raw_name = {"ic2.blockmfe"}},
+		{text = "МФЭ", buyPrice = 10000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=1.0,id="IC2:blockElectric"}}, raw_name = {"ic2.blockmfe"}},
 		{text = "Генератор", buyPrice = 1000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="IC2:blockGenerator"}}, raw_name = {"ic2.blockgenerator"}},
 		{text = "Металлоформировачный мех.", buyPrice = 2500, minCount = 0, maxCount = 50000, fingerprint = {{dmg=4.0,id="IC2:blockMachine2"}}, raw_name = {"ic2.blockmetalformer"}},
 		{text = "Алмазная кирка", buyPrice = 1500, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:diamond_pickaxe"}}, raw_name = {"item.pickaxediamond"}},

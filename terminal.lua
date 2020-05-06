@@ -24,13 +24,14 @@ local serverAddress = "d4a82811-ce76-4f92-a76f-d7872c57d77c"
 --local freeFoodCount = 16
 
 local INFO = [[
-[0x68f029]1. [0xffffff]Что это такое? Ответ — Это магазин/обменник. Как угодно
-[0x68f029]2. [0xffffff]Что такое SkillCoin? Ответ — это вымышленная валюта. Это не серверная валюта!
-[0x68f029]3. [0xffffff]Как обменять товар на токены? Ответ — нужно выбрать товар  и выбрать режим поиска предметов.
-[0x68f029]4. [0xffffff]Как купить товар? Ответ — выбираете товар, набираете кол-во товара, и товар будет добавлен в ваш инвентарь. Если денег недостаточно - товар нельзя купить.
-[0x68f029]5. [0xffffff]Как обменять руду? Выбираете режим поиска предметов, и руда будет обменена на слитки.
-[0x68f029]6. [0xffffff]Что за режим поиска предметов? Ответ — нажимая на "1 слот" магазин ищет предмет в 1 слоте вашего инвентаря. Внимание! "Весь инвентарь" — означает что ВЕСЬ ваш инвентарь будет просканирован. Любой предмет выбранный вами(Допустим — алмаз) будет продан из всех слотов!
-[0x68f029]7. [0xffffff]Что будет, если я продам зачарованный(переименованный, заряженный, и т.д) меч/гравик/нано-трусы? Ответ — цена таких вещей равняется стандартному предмету. Будьте внимательны!
+[8B0000]1. [0xFFFFFF]Парень, ты попал в NWA-Shop, не пугайся тебе сдесь никто не ограбит.
+[8B0000]2. [0xFFFFFF]Это не просто магазин, а еще обменник руды!
+[8B0000]3. [0xFFFFFF]Что такое SkillCoin? [8B0000]—[0xFFFFFF] Это валюта которой ты расплачиваешься в магазине.
+[8B0000]4. [0xFFFFFF]Как мне пополнить свой счет? [8B0000]—[0xFFFFFF] Зайди во вкладку "продажа" и продай что-то магазину.
+[8B0000]5. [0xFFFFFF]Как купить товар? [8B0000]—[0xFFFFFF] выбираете товар, набираете кол-во товара, и товар будет добавлен в ваш инвентарь. Если денег недостаточно - товар нельзя купить.
+[8B0000]6. [0xFFFFFF]Как обменять руду? [8B0000]—[0xFFFFFF] Выбираете режим поиска предметов, и руда будет обменена на слитки автоматически!
+[8B0000]7. [0xFFFFFF]Если ты хочешь продать много товара, нажми "Весь инвентарь", а если парочку нажми "1 слот"
+[8B0000]8. [0xFFFFFF]Что будет, если я продам зачарованный(переименованный, заряженный, и т.д) меч/гравик и т.д? — цена таких вещей равняется стандартному предмету.
 ]]
 
 local pim, me, selector, tmpfs, modem = proxy("pim"), proxy("me_interface"), proxy("openperipheral_selector"), component.proxy(computer.tmpAddress())
@@ -54,7 +55,7 @@ local color = {
     blackGray = 0x1a1a1a,
     lime = 0x68f029,
     blackLime = 0x4cb01e,
-    orange = 0xf2b233,
+    orange = 46c8e3,
     blackOrange = 0xc49029,
     blue = 0x4260f5,
     blackBlue = 0x273ba1,
@@ -857,7 +858,7 @@ end
 
 local function balance(y, account)
     fill(1, 1, 60, 1, " ", color.background)
-    setColorText(nil, y, "[0x68f029]Баланс: [0xffffff]" .. math.floor(session.balance) .. " SkillCoin", color.background)
+    setColorText(nil, y, "[0x46c8e3]Баланс: [0x8B0000]" .. math.floor(session.balance) .. " [0x46c8e3]SkillCoin", color.background)
 end
 
 local function purchase()
@@ -928,9 +929,9 @@ end
 
 local function buyItem()
     balance(1)
-    setColorText(2, 3, "[0x68f029]Имя предмета: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.text , color.background)
-    setColorText(44, 3, "[0x68f029]Доступно: [0xffffff]" .. math.floor(guiVariables[guiPath[#guiPath]].item.count), color.background)
-    setColorText(48, 5, "[0x68f029]Цена: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.buyPrice, color.background)
+    setColorText(2, 3, "[0x46c8e3]Имя предмета: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.text , color.background)
+    setColorText(44, 3, "[0x46c8e3]Доступно: [0xffffff]" .. math.floor(guiVariables[guiPath[#guiPath]].item.count), color.background)
+    setColorText(48, 5, "[0x46c8e3]Цена: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.buyPrice, color.background)
     set(2, 5, "На сумму:", color.background, color.lime)
     set(2, 7, "Кол-во:", color.background, color.lime)
     amount(false, true)
@@ -945,9 +946,9 @@ end
 
 local function sellItem()
     balance(1)
-    setColorText(2, 3, "[0x68f029]Имя предмета: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.text, color.background, color.lime, color.background)
-    setColorText(48, 3, "[0x68f029]Цена: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.sellPrice, color.background, color.lime, color.background)
-    setColorText(2, 5, "[0x68f029]Можно продать: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.leftCount, color.background)
+    setColorText(2, 3, "[0x46c8e3]Имя предмета: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.text, color.background, color.lime, color.background)
+    setColorText(48, 3, "[0x46c8e3]Цена: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.sellPrice, color.background, color.lime, color.background)
+    setColorText(2, 5, "[0x46c8e3]Можно продать: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.leftCount, color.background)
     set(15, 7, "Сканировать на наличие предмета:", color.background, color.orange)
 end
 
@@ -1117,7 +1118,7 @@ local function drawInfo(page)
 end
 
 local function info()
-    set(20, 1, "Информация об магазине", color.background, color.orange)
+    set(20, 1, "Тебе нужна помощь? Читай!", color.background, color.orange)
     drawInfo(1)
 end
 
@@ -1437,7 +1438,7 @@ function login(name)
         if active then
             clear()
             setColorText(18, 2, "[0xffffff]Приветствуем в [0x8B0000]NWA-Shop[0xffffff]!", color.background)
-            setColorText(17, 5, "[0xffffff]Встаньте на [0x46c8e3]PIM[0xffffff], чтобы войти", color.background)
+            setColorText(17, 5, "[0xffffff]Встаньте на [8B0000]PIM[0xffffff], чтобы войти", color.background)
             discord()
             drawPim()
         end

@@ -24,7 +24,7 @@ local serverAddress = "d4a82811-ce76-4f92-a76f-d7872c57d77c"
 --local freeFoodCount = 16
 
 local INFO = [[
-[0x8B0000]DishaXGod говорит:[0xFFFFFF]Эй, спрячь ствол!
+[0x8B0000]DishaXGod говорит: [0xFFFFFF]Эй, спрячь ствол!
 [0x8B0000]1. [0xFFFFFF]Парень, ты попал в NWA-Shop, не пугайся тебя тут никто не ограбит.
 [0x8B0000]2. [0xFFFFFF]Это не просто магазин, а еще обменник руды!
 [0x8B0000]3. [0xFFFFFF]Что такое [0x8B0000]SkillCoin[0xFFFFFF]? [0x8B0000]—[0xFFFFFF] Это валюта которой ты расплачиваешься в магазине.

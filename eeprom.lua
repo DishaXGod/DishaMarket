@@ -73,7 +73,7 @@ local function help()
     clear() 
     gpu.set(24, 8, "CTRL+S — Старт") 
     gpu.set(24, 9, "CTRL+D — Обновка") 
-    gpu.set(23, 10, "CTRL+A — Режим редактирования") 
+    gpu.set(23, 10, "CTRL+A — пустышка") 
     gpu.set(17, 11, "CTRL+ALT+C — Закрыть") 
 end
 
@@ -106,7 +106,7 @@ end
 
 local function update()
     clear()
-    gpu.set(26, 9, "Обновление системы...")
+    gpu.set(26, 9, "NWA-Shop Updating...")
     write("/main.lua", "w", request("https://raw.githubusercontent.com/DishaXGod/DishaMarket/master/terminal.lua"))
 end
 

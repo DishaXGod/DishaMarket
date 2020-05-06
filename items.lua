@@ -29,7 +29,7 @@
 		{text = "Лазурит", buyPrice = 15, minCount = 0, maxCount = 15000, fingerprint = {{dmg=4.0,id="minecraft:dye"}}, raw_name = {"item.dye"}},
 		{text = "Уголь", buyPrice = 15, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="minecraft:coal"}}, raw_name = {"item.coal"}},
 		{text = "Солн.Панель 2 уровень", buyPrice = 20000, minCount = 0, maxCount = 1000, fingerprint = {{dmg=0.0,id="CompactSolars:CompactSolarBlock"}}, raw_name = {"tile.compactsolars:lv_block"}},
---		{text = "Урановый слиток", buyPrice = 720, minCount = 0, maxCount = 50000, fingerprint = {{dmg=11.0,id="AdvancedSolarPanel:asp_crafting_items"}}, raw_name = {"itemuraningot"}},
+		{text = "Урановый слиток", buyPrice = 720, minCount = 0, maxCount = 50000, fingerprint = {{dmg=11.0,id="AdvancedSolarPanel:asp_crafting_items"}}, raw_name = {"itemuraningot"}},
 		{text = "Изумрудная монета", sellPrice = 5000, minCount = 0, maxCount = 1000, fingerprint = {{dmg=0.0,id="customnpc:NpcCoinEmerald"}}, raw_name = {"item.npccoinemerald"}},
 		{text = "Золотая монета", sellPrice = 4000, minCount = 0, maxCount = 1000, fingerprint = {{dmg=0.0,id="customnpc:NpcCoinGold"}}, raw_name = {"item.npccoingold"}},
 		{text = "Железная монета", sellPrice = 2000, minCount = 0, maxCount = 1000, fingerprint = {{dmg=0.0,id="customnpc:NpcCoinIron"}}, raw_name = {"item.npccoiniron"}},

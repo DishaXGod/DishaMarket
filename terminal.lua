@@ -24,13 +24,14 @@ local serverAddress = "d4a82811-ce76-4f92-a76f-d7872c57d77c"
 --local freeFoodCount = 16
 
 local INFO = [[
+[0x8B0000]DishaXGod говорит:[0xFFFFFF]Эй, спрячь ствол!
 [0x8B0000]1. [0xFFFFFF]Парень, ты попал в NWA-Shop, не пугайся тебе сдесь никто не ограбит.
 [0x8B0000]2. [0xFFFFFF]Это не просто магазин, а еще обменник руды!
-[0x8B0000]3. [0xFFFFFF]Что такое SkillCoin? [0x8B0000]—[0xFFFFFF] Это валюта которой ты расплачиваешься в магазине.
+[0x8B0000]3. [0xFFFFFF]Что такое [0x8B0000]SkillCoin[0xFFFFFF]? [0x8B0000]—[0xFFFFFF] Это валюта которой ты расплачиваешься в магазине.
 [0x8B0000]4. [0xFFFFFF]Как мне пополнить свой счет? [0x8B0000]—[0xFFFFFF] Зайди во вкладку "продажа" и продай что-то магазину.
 [0x8B0000]5. [0xFFFFFF]Как купить товар? [0x8B0000]—[0xFFFFFF] выбираете товар, набираете кол-во товара, и товар будет добавлен в ваш инвентарь. Если денег недостаточно - товар нельзя купить.
 [0x8B0000]6. [0xFFFFFF]Как обменять руду? [0x8B0000]—[0xFFFFFF] Выбираете режим поиска предметов, и руда будет обменена на слитки автоматически!
-[0x8B0000]7. [0xFFFFFF]Если ты хочешь продать много товара, нажми "Весь инвентарь", а если парочку нажми "1 слот"
+[0x8B0000]7. [0xFFFFFF]Ты хочешь продать много товара, нажми "Весь инвентарь", а если парочку нажми "1 слот"
 [0x8B0000]8. [0xFFFFFF]Что будет, если я продам зачарованный(переименованный, заряженный, и т.д) меч/гравик и т.д? — цена таких вещей равняется стандартному предмету.
 ]]
 
@@ -931,7 +932,7 @@ local function buyItem()
     balance(1)
     setColorText(2, 3, "[0x46c8e3]Имя предмета: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.text , color.background)
     setColorText(44, 3, "[0x46c8e3]Доступно: [0xffffff]" .. math.floor(guiVariables[guiPath[#guiPath]].item.count), color.background)
-    setColorText(48, 5, "[0x46c8e3]Цена: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.buyPrice, color.background)
+    setColorText(48, 5, "[0x46c8e3]Цена: [0x8B0000]" .. guiVariables[guiPath[#guiPath]].item.buyPrice, color.background)
     set(2, 5, "На сумму:", color.background, color.lime)
     set(2, 7, "Кол-во:", color.background, color.lime)
     amount(false, true)
@@ -947,7 +948,7 @@ end
 local function sellItem()
     balance(1)
     setColorText(2, 3, "[0x46c8e3]Имя предмета: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.text, color.background, color.lime, color.background)
-    setColorText(48, 3, "[0x46c8e3]Цена: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.sellPrice, color.background, color.lime, color.background)
+    setColorText(48, 3, "[0x46c8e3]Цена: [0x8B0000]" .. guiVariables[guiPath[#guiPath]].item.sellPrice, color.background, color.lime, color.background)
     setColorText(2, 5, "[0x46c8e3]Можно продать: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.leftCount, color.background)
     set(15, 7, "Сканировать на наличие предмета:", color.background, color.orange)
 end

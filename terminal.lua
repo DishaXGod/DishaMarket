@@ -538,7 +538,7 @@ local function rawInsert(fingerprint, count)
     if success then
         return returnValue.size
     else
-        return 0, returnValue or "Какая-то ошибка!"
+        return 0, returnValue or "Unknown error"
     end
 end
 
@@ -866,12 +866,12 @@ local function purchase()
     local count = tonumber(writes.amount.input)
 
     if guiVariables[guiPath[#guiPath]].amount <= session.balance then
-        log("Init buy (" .. count .. " qty in the amount of " .. guiVariables[guiPath[#guiPath]].amount .. " SkillCoin) " .. guiVariables[guiPath[#guiPath]].item.text, session.name)
+        log("Init buy (" .. count .. " qty in the amount of " .. guiVariables[guiPath[#guiPath]].amount .. " rip) " .. guiVariables[guiPath[#guiPath]].item.text, session.name)
         local purchased = autoInsert(guiVariables[guiPath[#guiPath]].item.fingerprint, count)
 
         if purchased > 0 then
             local trueAmount = math.floor(purchased * guiVariables[guiPath[#guiPath]].item.buyPrice)
-            local msgToLog = session.name .. " Купил (" .. purchased .. " qty in the amount of " .. trueAmount .. " SkillCoin) " .. guiVariables[guiPath[#guiPath]].item.text
+            local msgToLog = session.name .. " buy the (" .. purchased .. " qty in the amount of " .. trueAmount .. " rip) " .. guiVariables[guiPath[#guiPath]].item.text
             log(msgToLog, session.name)
             session.balance = session.balance - trueAmount
             session.transactions = session.transactions + 1
@@ -1065,7 +1065,7 @@ end
 -- end
 
 local function account()
-    setColorText(nil, 7, "[0x8B0000]" .. session.name .. ":[0xFFD700]", color.background)
+    setColorText(nil, 7, "[0x8B0000]" .. session.name .. ":", color.background)
     balance(9)
     setColorText(nil, 10, "[0x46c8e3]Совершенно транзакций: [0x8B0000]" .. session.transactions, color.background)
     setColorText(15, 11, "[0x46c8e3]Регистрация: [0x8B0000]" .. session.regTime, color.background)
@@ -1181,7 +1181,7 @@ local function acceptFeedback()
             drawButtons()
         else
             log("Error leaving feedback " .. (response and response.message and tostring(response.message) or "no server response"), session.name)
-            alert({"Внимание! Отзыв не оставлен,", "обратитесь к DishaXGod!"})
+            alert({"Внимание! Отзыв не оставлен,", "обратитесь к администрации!"})
         end
         buttons.acceptFeedback.notVisible = true
         writes.feedback.notVisible = true

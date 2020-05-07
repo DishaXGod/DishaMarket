@@ -60,7 +60,7 @@ local color = {
     blackOrange = 0x46c8e3,
     blue = 0x4260f5,
     blackBlue = 0x273ba1,
-    red = 0xff0000
+    red = 0xff0000,
     gold = 0xFFD700
 }
 

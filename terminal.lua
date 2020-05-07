@@ -1543,9 +1543,7 @@ buttons = {
 
     prevInfo = {buttonIn = {"info"}, disabled = true, disabledBackground = color.background, disabledForeground = color.blackBlue, background = color.background, activeBackground = background, foreground = color.blue, activeForeground = color.blackBlue, text = "<───", x = 21, y = 16, width = 4, height = 1, action = function() drawInfo(guiPage - 1) end},
     nextInfo = {buttonIn = {"info"}, disabled = true, disabledBackground = color.background, disabledForeground = color.blackBlue, background = color.background, activeBackground = background, foreground = color.blue, activeForeground = color.blackBlue, text = "───>", x = 36, y = 16, width = 4, height = 1, action = function() drawInfo(guiPage + 1) end},
-    prevInfo = {buttonIn = {"info2"}, disabled = true, disabledBackground = color.background, disabledForeground = color.blackBlue, background = color.background, activeBackground = background, foreground = color.blue, activeForeground = color.blackBlue, text = "<───", x = 21, y = 16, width = 4, height = 1, action = function() drawInfo(guiPage - 1) end},
-    nextInfo = {buttonIn = {"info2"}, disabled = true, disabledBackground = color.background, disabledForeground = color.blackBlue, background = color.background, activeBackground = background, foreground = color.blue, activeForeground = color.blackBlue, text = "───>", x = 36, y = 16, width = 4, height = 1, action = function() drawInfo(guiPage + 1) end},
-    
+
     
     acceptFeedback = {buttonIn = {"feedbacks"}, notVisible = true, background = color.background, activeBackground = color.background, foreground = color.lime, activeForeground = color.blackLime, text = "[Подтвердить]", x = 24, y = 14, width = 13, height = 1, action = function() acceptFeedback() end},
     prevFeedback = {buttonIn = {"feedbacks"}, disabled = true, disabledBackground = color.background, disabledForeground = color.blackBlue, background = color.background, activeBackground = background, foreground = color.blue, activeForeground = color.blackBlue, text = "<───", x = 21, y = 16, width = 4, height = 1, action = function() drawFeedback(guiPage - 1) end},

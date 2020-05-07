@@ -1022,7 +1022,9 @@ local function field(play)
     end
 end
 
---  local function lottery()
+      local function lottery()
+	alert({"Если хочешь к нам пиши мне /m DishaXGod либо Airguy!"})
+
 --   balance(1)
 --   setColorText(nil, 3, "[0x68f029]Мгновенная беспроигрышная лотерея. Цена билета — [0xffffff]" .. priceLottery .. " [0x68f029]!", color.background)
 --     setColorText(19, 4, "[0x68f029]Супер-приз — [0xffffff]" .. superPrize .. " [0x68f029]SkillCoin!", color.background)
@@ -1536,11 +1538,11 @@ buttons = {
     
     purchase = {buttonIn = {"buyItem"}, disabled = true, disabledBackground = color.blackGray, disabledForeground = color.blackOrange, background = color.gray, activeBackground = color.gold, foreground = color.gold, activeForeground = color.gold, text = "  Купить  ", x = 46, y = 18, width = 10, height = 1, action = function() purchase() end},
     getFood = {buttonIn = {"freeFood"}, disabled = true, disabledBackground = color.blackGray, disabledForeground = color.blackLime, background = color.gray, activeBackground = color.blackGray, foreground = color.lime, activeForeground = color.blackLime, text = "Получить подгон", x = 19, y = 9, width = 24, height = 3, action = function() getFood() end},
-    --playLottery = {buttonIn = {"lottery"}, background = color.gray, activeBackground = color.blackGray, foreground = color.lime, activeForeground = color.blackLime, text = "Купить билет", x = 19, y = 13, width = 24, height = 3, action = function() playLottery() end},
+    playLottery = {buttonIn = {"lottery"}, background = color.gray, activeBackground = color.blackGray, foreground = color.lime, activeForeground = color.blackLime, text = "Набор в NWA", x = 19, y = 13, width = 24, height = 3, action = function() playLottery() end},
     
-    sellScanOne = {buttonIn = {"sellItem"}, switch = true, active = false, focus = true, background = color.gray, activeBackground = color.blackGray, foreground = color.lime, activeForeground = color.blackLime, text = "      1 слот      ", x = 22, y = 9, width = 18, height = 1, action = function(active) if active then itemScan = "one" else itemScan = false end end},
+    sellScanOne = {buttonIn = {"sellItem"}, switch = true, active = false, focus = true, background = color.gray, activeBackground = color.blackGray, foreground = color.lime, activeForeground = color.gold, text = "      1 слот      ", x = 22, y = 9, width = 18, height = 1, action = function(active) if active then itemScan = "one" else itemScan = false end end},
     sellScanMulti = {buttonIn = {"sellItem"}, switch = true, active = false, focus = true, background = color.gray, activeBackground = color.blackGray, foreground = color.lime, activeForeground = color.gold, text = "  Весь инвентарь  ", x = 22, y = 11, width = 18, height = 1, action = function(active) if active then itemScan = "multi" else itemScan = false end end},
-    oreScanOne = {buttonIn = {"ore"}, switch = true, active = false, focus = true, background = color.gray, activeBackground = color.blackGray, foreground = color.lime, activeForeground = color.blackLime, text = "      1 слот      ", x = 22, y = 4, width = 18, height = 1, action = function(active) if active then itemScan = "one" else itemScan = false end end},
+    oreScanOne = {buttonIn = {"ore"}, switch = true, active = false, focus = true, background = color.gray, activeBackground = color.blackGray, foreground = color.lime, activeForeground = color.gold, text = "      1 слот      ", x = 22, y = 4, width = 18, height = 1, action = function(active) if active then itemScan = "one" else itemScan = false end end},
     oreScanMulti = {buttonIn = {"ore"}, switch = true, active = false, focus = true, background = color.gray, activeBackground = color.blackGray, foreground = color.lime, activeForeground = color.gold, text = "  Весь инвентарь  ", x = 22, y = 6, width = 18, height = 1, action = function(active) if active then itemScan = "multi" else itemScan = false end end},
 
     prevInfo = {buttonIn = {"info"}, disabled = true, disabledBackground = color.background, disabledForeground = color.blackBlue, background = color.background, activeBackground = background, foreground = color.blue, activeForeground = color.blackBlue, text = "<───", x = 21, y = 16, width = 4, height = 1, action = function() drawInfo(guiPage - 1) end},

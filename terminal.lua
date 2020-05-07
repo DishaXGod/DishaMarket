@@ -289,7 +289,7 @@ local function parseInfo()
                 if sym == unicode.len(INFO) and str ~= "" then
                     table.insert(infoList[page], str)
                 end
-                
+  end
                 --
                  local symbol = unicode.sub(INFO2, sym, sym)
             

@@ -61,6 +61,7 @@ local color = {
     blue = 0x4260f5,
     blackBlue = 0x273ba1,
     red = 0xff0000
+    gold = 0xFFD700
 }
 
 local pimGeometry = {
@@ -942,7 +943,7 @@ local function buy()
     buttons.nextBuy.disabled = true
     drawButton("nextBuy")
     balance(1)
-    set(3, 3, "[0xFFD700]Магазин продаёт                 Кол-во         Цена", color.background, color.orange)
+    set(3, 3, "Магазин продаёт                 Кол-во         Цена", color.background, color.gold)
 end
 
 local function sellItem()
@@ -956,7 +957,7 @@ end
 local function sell()
     buttons.nextSell.disabled = true
     drawButton("nextSell")
-    set(3, 3, "[0xFFD700]Магазин покупает                Кол-во         Цена", color.background)
+    set(3, 3, "Магазин покупает                Кол-во         Цена", color.background, color.gold)
     balance(1)
 end
 

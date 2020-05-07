@@ -252,6 +252,7 @@ local function parseInfo()
         if skip > 0 then
             skip = skip - 1
         else
+            --
             local symbol = unicode.sub(INFO, sym, sym)
             
             if symbol == [[\]] and unicode.sub(INFO, sym + 1, sym + 1) == "n" then
@@ -288,6 +289,45 @@ local function parseInfo()
 
                 if sym == unicode.len(INFO) and str ~= "" then
                     table.insert(infoList[page], str)
+                end
+                
+                --
+                 local symbol = unicode.sub(INFO2, sym, sym)
+            
+            if symbol == [[\]] and unicode.sub(INFO2, sym + 1, sym + 1) == "n" then
+                table.insert(infoList2[page], str)
+                table.insert(infoList2[page], "\n")
+                str, symbols, words, skip = "", 0, words + 1, 1
+            elseif not ((symbols == 0 or symbols == 60) and symbol == " ") then
+                if symbol == "\n" and symbols > 0 then
+                    table.insert(infoList2[page], str)
+                    table.insert(infoList2[page], "\n")
+                    str, symbols, words = "", 0, words + 1
+                elseif symbol == "[" then
+                    tag = ""
+
+                    if str ~= "" then
+                        table.insert(infoList2[page], str)
+                        str = ""
+                    end
+                elseif symbol == "]" then
+                    table.insert(infoList2[page], {tonumber(tag)})
+                    tag = false
+                elseif tag then
+                    tag = tag .. symbol 
+                else 
+                    if symbols == 60 then
+                        table.insert(infoList2[page], str)
+                        table.insert(infoList2[page], "\n")
+                        str, symbols, words = "", 0, words + 1
+                    end
+
+                    str = str .. symbol
+                    symbols = symbols + 1 
+                end
+
+                if sym == unicode.len(INFO2) and str ~= "" then
+                    table.insert(infoList2[page], str)
                 end
 -- 123
 local symbol = unicode.sub(INFO2, sym, sym)

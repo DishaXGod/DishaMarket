@@ -17,20 +17,22 @@ local me_side = "DOWN"
 local pim_side = "UP"
 local server = "Default"
 local version, port = "modem", 1414
-local serverAddress = "fcabde99-508f-4115-abd0-1406d4c404d2"
+local serverAddress = "d4a82811-ce76-4f92-a76f-d7872c57d77c"
 
-local priceLottery = 150
-local superPrize = 10000
+--local priceLottery = 150
+--local superPrize = 10000
 local freeFoodCount = 16
 
 local INFO = [[
-[0x68f029]1. [0xffffff]Что это такое? Ответ — Это магазин/обменник. Как угодно.
-[0x68f029]2. [0xffffff]Что такое R.I.P? Ответ — это вымышленная валюта. Это не серверная валюта!
-[0x68f029]3. [0xffffff]Как обменять товар на рипы? Ответ — нужно выбрать товар  и выбрать режим поиска предметов.
-[0x68f029]4. [0xffffff]Как купить товар? Ответ — выбираете товар, набираете кол-во товара, и товар будет добавлен в ваш инвентарь. Если денег недостаточно - товар нельзя купить.
-[0x68f029]5. [0xffffff]Как обменять руду? Выбираете режим поиска предметов, и руда будет обменена на слитки.
-[0x68f029]6. [0xffffff]Что за режим поиска предметов? Ответ — нажимая на "1 слот" магазин ищет предмет в 1 слоте вашего инвентаря. Внимание! "Весь инвентарь" — означает что ВЕСЬ ваш инвентарь будет просканирован. Любой предмет выбранный вами(Допустим — алмаз) будет продан из всех слотов!
-[0x68f029]7. [0xffffff]Что будет, если я продам зачарованный(переименованный, заряженный, и т.д) меч/гравик/нано-трусы? Ответ — цена таких вещей равняется стандартному предмету. Будьте внимательны!
+[0x8B0000]DishaXGod говорит: [0xFFFFFF]Эй, спрячь ствол!
+[0x8B0000]1. [0xFFFFFF]Парень, ты попал в NWA-Shop, не пугайся тебя тут никто не ограбит.
+[0x8B0000]2. [0xFFFFFF]Это не просто магазин, а еще обменник руды!
+[0x8B0000]3. [0xFFFFFF]Что такое [0x8B0000]SkillCoin[0xFFFFFF]? [0x8B0000]—[0xFFFFFF] Это валюта которой ты расплачиваешься в магазине.
+[0x8B0000]4. [0xFFFFFF]Как мне пополнить свой счет? [0x8B0000]—[0xFFFFFF] Зайди во вкладку "продажа" и продай что-то магазину.
+[0x8B0000]5. [0xFFFFFF]Как купить товар? [0x8B0000]—[0xFFFFFF] выбираете товар, набираете  товара, и товар будет добавлен в ваш инвентарь. Если денег недостаточно - товар нельзя купить.
+[0x8B0000]6. [0xFFFFFF]Как обменять руду? [0x8B0000]—[0xFFFFFF] Выбираете режим поиска предметов, и руда будет обменена на слитки автоматически!
+[0x8B0000]7. [0xFFFFFF]Ты хочешь продать много товара, нажми "Весь инвентарь", а если парочку нажми "1 слот"
+[0x8B0000]8. [0xFFFFFF]Что будет, если я продам зачарованный(переименованный, заряженный, и т.д) меч/гравик и т.д? — цена таких вещей равняется стандартному предмету.
 ]]
 
 local pim, me, selector, tmpfs, modem = proxy("pim"), proxy("me_interface"), proxy("openperipheral_selector"), component.proxy(computer.tmpAddress())
@@ -50,12 +52,12 @@ local color = {
     pim = 0x46c8e3,
 
     gray = 0x303030,
-    lightGray = 0x999999,
+    lightGray = 0xA9A9A9,
     blackGray = 0x1a1a1a,
-    lime = 0x68f029,
-    blackLime = 0x4cb01e,
-    orange = 0xf2b233,
-    blackOrange = 0xc49029,
+    lime = 0x46c8e3,
+    blackLime = 0x46c8e3,
+    orange = 0x46c8e3,
+    blackOrange = 0x46c8e3,
     blue = 0x4260f5,
     blackBlue = 0x273ba1,
     red = 0xff0000
@@ -65,16 +67,17 @@ local pimGeometry = {
     x = 23,
     y = 7,
 
-    "⡏⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⢹",
-    "⡇              ⢸",
-    "⡇              ⢸",
-    "⡇              ⢸",
-    "⡇              ⢸",
-    "⡇              ⢸",
-    "⡇              ⢸",
-    "⣇⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣸"
+    "⡏⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⢹",
+    "⡇                 ⢸",
+    "⡇  GUN SHOP NWA   ⢸",
+    "⡇   ._________.   ⢸",
+    "⡇  */ ///______I  ⢸",
+    "⡇  ) . /_(_)      ⢸",
+    "⡇  /__/           ⢸",
+    "⣇⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣸"
 
 }
+
 
 local infoList, session, items, itemsInMe, guiPath, guiVariables = {{}}, {}, {}, {}, {}, {}, {}
 
@@ -164,15 +167,15 @@ local function drawPim()
 end
 
 local function discord()
-    setColorText(6, 18, "[0x303030]По любым проблемам пишите в Discord: [0x337d11]BrightYC#0604", color.background)
+    setColorText(6, 18, "[0x303030]По любым проблемам (не)пишите в Discord: [0x8B0000]DishaXGod#2397", color.background)
 end
 
 local function outOfService(reason)
     active = false
     clear()
-    set(8, 7, "Магазин не работает, приносим свои извинения за", color.background, color.lime)
-    set(18, 8, "предоставленные неудобства", color.background, color.lime)
-    set(23, 13, "OUT OF SERVICE!", color.background, color.red)
+    set(8, 7, "Магазин не работает, закрыто!", color.background, color.lime)
+    set(18, 8, "Товара нет! И не будет!", color.background, color.lime)
+    set(23, 13, "Ты еще сдесь?!", color.background, color.red)
     if reason then
         set(nil, 16, "Причина: " .. reason, color.background, color.gray)
     end
@@ -293,7 +296,7 @@ local function encodeString(str)
 end
 
 local function downloadItems()
-    local data = request("https://raw.githubusercontent.com/BrightYC/RipMarket/master/items.lua")
+    local data = request("https://raw.githubusercontent.com/DishaXGod/DishaMarket/master/items.lua")
     local chunk, err = load("return " .. data, "=items.lua", "t")
     if not chunk then 
         error("Неправильно сконфигурирован файл вещей! " .. err)
@@ -856,7 +859,7 @@ end
 
 local function balance(y, account)
     fill(1, 1, 60, 1, " ", color.background)
-    setColorText(nil, y, "[0x68f029]Баланс: [0xffffff]" .. math.floor(session.balance) .. " R.I.P", color.background)
+    setColorText(nil, y, "[0x46c8e3]Баланс: [0x8B0000]" .. math.floor(session.balance) .. " [0x46c8e3]SkillCoin", color.background)
 end
 
 local function purchase()
@@ -927,9 +930,9 @@ end
 
 local function buyItem()
     balance(1)
-    setColorText(2, 3, "[0x68f029]Имя предмета: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.text , color.background)
-    setColorText(44, 3, "[0x68f029]Доступно: [0xffffff]" .. math.floor(guiVariables[guiPath[#guiPath]].item.count), color.background)
-    setColorText(48, 5, "[0x68f029]Цена: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.buyPrice, color.background)
+    setColorText(2, 3, "[0x46c8e3]Имя предмета: [0xFFD700]" .. guiVariables[guiPath[#guiPath]].item.text , color.background)
+    setColorText(44, 3, "[0x46c8e3]Доступно: [0xFFD700]" .. math.floor(guiVariables[guiPath[#guiPath]].item.count), color.background)
+    setColorText(48, 5, "[0x46c8e3]Цена: [0xFFD700]" .. guiVariables[guiPath[#guiPath]].item.buyPrice, color.background)
     set(2, 5, "На сумму:", color.background, color.lime)
     set(2, 7, "Кол-во:", color.background, color.lime)
     amount(false, true)
@@ -944,9 +947,9 @@ end
 
 local function sellItem()
     balance(1)
-    setColorText(2, 3, "[0x68f029]Имя предмета: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.text, color.background, color.lime, color.background)
-    setColorText(48, 3, "[0x68f029]Цена: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.sellPrice, color.background, color.lime, color.background)
-    setColorText(2, 5, "[0x68f029]Можно продать: [0xffffff]" .. guiVariables[guiPath[#guiPath]].item.leftCount, color.background)
+    setColorText(2, 3, "[0x46c8e3]Имя предмета: [0xFFD700]" .. guiVariables[guiPath[#guiPath]].item.text, color.background, color.lime, color.background)
+    setColorText(48, 3, "[0x46c8e3]Цена: [0xFFD700]" .. guiVariables[guiPath[#guiPath]].item.sellPrice, color.background, color.lime, color.background)
+    setColorText(2, 5, "[0x46c8e3]Можно продать: [0xFFD700]" .. guiVariables[guiPath[#guiPath]].item.leftCount, color.background)
     set(15, 7, "Сканировать на наличие предмета:", color.background, color.orange)
 end
 
@@ -967,7 +970,7 @@ local function drawOreList()
             local ingots = getAllItemCount(items.ore[item].fingerprint)
 
             if ingots > 0 then
-                setColorText(nil, counter + 9, "[0x4260f5]" .. items.ore[item].text .. "([0xffffff]x" .. items.ore[item].ratio .. "[0x4260f5]): [0xffffff]" .. math.floor(ingots / items.ore[item].ratio) .. " шт", color.background)
+                setColorText(nil, counter + 9, "[0xFFD700]" .. items.ore[item].text .. "([0xffffff]x" .. items.ore[item].ratio .. "[0xFFD700]): [0x8B0000]" .. math.floor(ingots / items.ore[item].ratio) .. " шт", color.background)
                 counter = counter + 1
             end
         end
@@ -982,28 +985,28 @@ end
 
 local function nextFood()
     if session.foodTime and time(true) < session.foodTime then
-        buttons.getFood.disabled = true
-        set(15, 5, "Вы сможете получить еду через:", color.background, color.lime) 
-        set(nil, 6, os.date("%H Часов %M Минут %S Секунд", session.foodTime - time(true)), color.background, 0xffffff)
-        drawButton("getFood")
-    else
-        buttons.getFood.disabled = false
-        drawButton("getFood")
-    end
+       buttons.getFood.disabled = true
+       set(15, 5, "Вы сможете получить еду через:", color.background, color.lime) 
+       set(nil, 6, os.date("%H Часов %M Минут %S Секунд", session.foodTime - time(true)), color.background, 0xffffff)
+       drawButton("getFood")
+   else
+       buttons.getFood.disabled = false
+       drawButton("getFood")
+   end
 end
 
 local function getFood()
-    if autoInsert(items.food, freeFoodCount) > 0 then
-        log("I give out free food", session.name)
-        session.foodTime = time(true) + 7200
-        haveFood = true
-        requestWithData(nil, {method = "merge", toMerge = {foodTime = session.foodTime}, name = session.name})
-        fill(18, 7, 26, 1, " ", color.background)
-        set(21, 7, "Приятного аппетита!", color.background, 0xffffff)
-        nextFood()
+   if autoInsert(items.food, freeFoodCount) > 0 then
+      log("I give out free food", session.name)
+       session.foodTime = time(true) + 86400
+       haveFood = true
+       requestWithData(nil, {method = "merge", toMerge = {foodTime = session.foodTime}, name = session.name})
+      fill(18, 7, 26, 1, " ", color.background)
+      set(21, 7, "Не обляпайся!", color.background, 0x8B0000)
+       nextFood()
         drawButton("getFood")
-    else
-        set(18, 7, "Еда кончилась, извините :(", color.background, color.lime)
+   else
+       set(18, 7, "Еда кончилась, иди бегай пухлый!", color.background, color.lime)
     end
 end
 
@@ -1016,56 +1019,56 @@ local function field(play)
     end
 end
 
-local function lottery()
-    balance(1)
-    setColorText(nil, 3, "[0x68f029]Мгновенная беспроигрышная лотерея. Цена билета — [0xffffff]" .. priceLottery .. " [0x68f029]рипов", color.background)
-    setColorText(19, 4, "[0x68f029]Супер-приз — [0xffffff]" .. superPrize .. " [0x68f029]рипов!", color.background)
-    field()
-end
+--  local function lottery()
+--   balance(1)
+--   setColorText(nil, 3, "[0x68f029]Мгновенная беспроигрышная лотерея. Цена билета — [0xffffff]" .. priceLottery .. " [0x68f029]!", color.background)
+--     setColorText(19, 4, "[0x68f029]Супер-приз — [0xffffff]" .. superPrize .. " [0x68f029]SkillCoin!", color.background)
+--     field()
+-- end
 
-local function playLottery()
-    if session.balance >= priceLottery then
-        session.balance = session.balance - priceLottery
-        balance(1)
-        field(true)
+-- local function playLottery()
+--     if session.balance >= priceLottery then
+--         session.balance = session.balance - priceLottery
+--         balance(1)
+ --        field(true)
 
-        local rip = math.random(50, 350)
+--         local rip = math.random(50, 350)
 
-        if math.random(3000) == 3000 then
-            rip = superPrize
-        else
-            if rip >= 200 then
-                rip = rip - (math.random(rip) + (rip >= 250 and 70 or 40))
-
-                if rip <= 0 then
-                    rip = math.random(30, 65)
-                end
-            end
-        end
-        rip = math.floor(rip)
-        setColorText(nil, 8, "[0x68f029]Вы выиграли: [0xffffff]" .. rip .. " [0x68f029]рипов", color.background)
-        local msgToLog = session.name .. " won the lottery " .. rip .. " rip"
-        log(msgToLog, session.name)
-        session.balance = session.balance + rip
-        local response = requestWithData({data = msgToLog, mPath = "/lottery.log", path = server .. "/lottery"}, {method = "merge", toMerge = {balance = {[server] = session.balance}}, name = session.name})
-        if not response or response.code ~= 200 then
-            log("Error on updating balance " .. (response and response.message and tostring(response.message) or "no server response"), session.name)
-            alert({"Внимание! Баланс не пополен,", "обратитесь к администрации!"})
-        end
-        sleep(.5)
-        balance(1)
-        fill(1, 10, 60, 1, " ", color.background)
-        field()
-    else
-        alert({"Недостаточно средств"})
-    end
-end
+ --        if math.random(3000) == 3000 then
+ --            rip = superPrize
+ --        else
+  --           if rip >= 200 then
+ --                rip = rip - (math.random(rip) + (rip >= 250 and 70 or 40))
+-- 
+  --               if rip <= 0 then
+  --                   rip = math.random(30, 65)
+  --               end
+--             end
+ --        end
+--         rip = math.floor(rip)
+--         setColorText(nil, 8, "[0x68f029]Вы выиграли: [0xffffff]" .. rip .. " [0x68f029]SkillCoin", color.background)
+--         local msgToLog = session.name .. " won the lottery " .. rip .. " rip"
+ --        log(msgToLog, session.name)
+ --        session.balance = session.balance + rip
+  --       local response = requestWithData({data = msgToLog, mPath = "/lottery.log", path = server .. "/lottery"}, {method = "merge", toMerge = {balance = {[server] = session.balance}}, name = session.name})
+  --       if not response or response.code ~= 200 then
+  --           log("Error on updating balance " .. (response and response.message and tostring(response.message) or "no server response"), session.name)
+  --           alert({"Внимание! Баланс не пополен,", "обратитесь к администрации!"})
+--         end
+  --       sleep(.5)
+ --        balance(1)
+ --        fill(1, 10, 60, 1, " ", color.background)
+ --        field()
+--     else
+ --        alert({"Недостаточно средств"})
+--     end
+-- end
 
 local function account()
-    setColorText(nil, 7, "[0x68f029]" .. session.name .. ":", color.background)
+    setColorText(nil, 7, "[0x8B0000]" .. session.name .. ":", color.background)
     balance(9)
-    setColorText(nil, 10, "[0x68f029]Совершенно транзакций: [0xffffff]" .. session.transactions, color.background)
-    setColorText(15, 11, "[0x68f029]Регистрация: [0xffffff]" .. session.regTime, color.background)
+    setColorText(nil, 10, "[0x46c8e3]Совершенно транзакций: [0x8B0000]" .. session.transactions, color.background)
+    setColorText(15, 11, "[0x46c8e3]Регистрация: [0x8B0000]" .. session.regTime, color.background)
 end
 
 local function drawPage()
@@ -1115,7 +1118,7 @@ local function drawInfo(page)
 end
 
 local function info()
-    set(20, 1, "Информация об магазине", color.background, color.orange)
+    set(20, 1, "Тебе нужна помощь? Читай!", color.background, color.orange)
     drawInfo(1)
 end
 
@@ -1194,7 +1197,7 @@ local function blackList(name)
     clear()
     setColorText(nil, 7, "[0x68f029](Не)уважаемый [0xffffff]" .. name, color.background)
     set(10, 8, "Вы внесены в чёрный список этого магазина", color.background, color.lime)
-    set(28, 13, "Удачи!", color.background, color.red)
+    set(28, 13, "Пока-пока!", color.background, color.red)
     discord()
 end
 
@@ -1434,8 +1437,8 @@ function login(name)
 
         if active then
             clear()
-            setColorText(18, 2, "[0xffffff]Приветствуем в [0x68f029]РипМаркете[0xffffff]!", color.background)
-            setColorText(17, 5, "[0xffffff]Встаньте на [0x46c8e3]PIM[0xffffff], чтобы войти", color.background)
+            setColorText(18, 2, "[0xffffff]Оружейный магазин [0x8B0000]NWA-Shop[0xffffff]!", color.background)
+            setColorText(17, 5, "[0xffffff]Встаньте на [0x8B0000]PIM[0xffffff], чтобы войти", color.background)
             discord()
             drawPim()
         end
@@ -1511,8 +1514,8 @@ buttons = {
     sell = {buttonIn = {"shop"}, background = color.gray, activeBackground = color.blackGray, foreground = color.lime, activeForeground = color.blackLime, text = "Продажа", x = 19, y = 10, width = 24, height = 3, action = function() toGui("sell") end},
     nextBuy = {buttonIn = {"buy"}, disabled = true, disabledBackground = color.blackGray, disabledForeground = color.blackOrange, background = color.gray, activeBackground = color.blackGray, foreground = color.orange, activeForeground = color.blackOrange, text = "  Далее  ", x = 50, y = 18, width = 9, height = 1, action = function() buttons.purchase.disabled = true item = items.shop[lists[focus.list].scrollContent[lists[focus.list].scrollContent.activeIndex].index] toGui("buyItem", {item = item}) guiVariables[guiPath[#guiPath]].amount = 0 end},
     nextSell = {buttonIn = {"sell"}, disabled = true, disabledBackground = color.blackGray, disabledForeground = color.blackOrange, background = color.gray, activeBackground = color.blackGray, foreground = color.orange, activeForeground = color.blackOrange, text = "  Далее  ", x = 50, y = 18, width = 9, height = 1, action = function() item = items.shop[lists[focus.list].scrollContent[lists[focus.list].scrollContent.activeIndex].index] toGui("sellItem", {item = item}) end},
-    freeFood = {buttonIn = {"other"}, disabledBackground = color.blackGray, disabledForeground = color.blackLime, background = color.gray, activeBackground = color.blackGray, foreground = color.lime, activeForeground = color.blackLime, text = "Бесплатная еда", x = 19, y = 8, width = 24, height = 3, action = function() toGui("freeFood") nextFood() end},
-    lottery = {buttonIn = {"other"}, disabledBackground = color.blackGray, disabledForeground = color.blackLime, background = color.gray, activeBackground = color.blackGray, foreground = color.lime, activeForeground = color.blackLime, text = "Лотерея", x = 19, y = 12, width = 24, height = 3, action = function() toGui("lottery") end},
+    freeFood = {buttonIn = {"other"}, disabledBackground = color.blackGray, disabledForeground = color.blackLime, background = color.gray, activeBackground = color.blackGray, foreground = color.lime, activeForeground = color.blackLime, text = "Бесплатный хавчик", x = 19, y = 8, width = 24, height = 3, action = function() toGui("freeFood") nextFood() end},
+    -- lottery = {buttonIn = {"other"}, disabledBackground = color.blackGray, disabledForeground = color.blackLime, background = color.gray, activeBackground = color.blackGray, foreground = color.lime, activeForeground = color.blackLime, text = "Лотерея", x = 19, y = 12, width = 24, height = 3, action = function() toGui("lottery") end},
     alert = {buttonIn = {"alert"}, background = color.gray, activeBackground = color.blackGray, foreground = color.orange, activeForeground = color.blackOrange, text = "Назад", x = 26, y = 15, width = 9, height = 1, action = function() back() end},
 
     zero = {buttonIn = {"buyItem"}, background = color.gray, activeBackground = color.blackGray, foreground = color.orange, activeForeground = color.blackOrange, text = "0", x = 29, y = 15, width = 3, height = 1, action = function() inputWrite("amount", 48) end},
@@ -1529,8 +1532,8 @@ buttons = {
     clear = {buttonIn = {"buyItem"}, background = color.gray, activeBackground = color.blackGray, foreground = color.orange, activeForeground = color.blackOrange, text = "C", x = 34, y = 15, width = 3, height = 1, action = function() amount("C") end},
     
     purchase = {buttonIn = {"buyItem"}, disabled = true, disabledBackground = color.blackGray, disabledForeground = color.blackOrange, background = color.gray, activeBackground = color.blackGray, foreground = color.orange, activeForeground = color.blackOrange, text = "  Купить  ", x = 46, y = 18, width = 10, height = 1, action = function() purchase() end},
-    getFood = {buttonIn = {"freeFood"}, disabled = true, disabledBackground = color.blackGray, disabledForeground = color.blackLime, background = color.gray, activeBackground = color.blackGray, foreground = color.lime, activeForeground = color.blackLime, text = "Получить еду", x = 19, y = 9, width = 24, height = 3, action = function() getFood() end},
-    playLottery = {buttonIn = {"lottery"}, background = color.gray, activeBackground = color.blackGray, foreground = color.lime, activeForeground = color.blackLime, text = "Купить билет", x = 19, y = 13, width = 24, height = 3, action = function() playLottery() end},
+    getFood = {buttonIn = {"freeFood"}, disabled = true, disabledBackground = color.blackGray, disabledForeground = color.blackLime, background = color.gray, activeBackground = color.blackGray, foreground = color.lime, activeForeground = color.blackLime, text = "Получить подгон", x = 19, y = 9, width = 24, height = 3, action = function() getFood() end},
+    --playLottery = {buttonIn = {"lottery"}, background = color.gray, activeBackground = color.blackGray, foreground = color.lime, activeForeground = color.blackLime, text = "Купить билет", x = 19, y = 13, width = 24, height = 3, action = function() playLottery() end},
     
     sellScanOne = {buttonIn = {"sellItem"}, switch = true, active = false, focus = true, background = color.gray, activeBackground = color.blackGray, foreground = color.lime, activeForeground = color.blackLime, text = "      1 слот      ", x = 22, y = 9, width = 18, height = 1, action = function(active) if active then itemScan = "one" else itemScan = false end end},
     sellScanMulti = {buttonIn = {"sellItem"}, switch = true, active = false, focus = true, background = color.gray, activeBackground = color.blackGray, foreground = color.lime, activeForeground = color.blackLime, text = "  Весь инвентарь  ", x = 22, y = 11, width = 18, height = 1, action = function(active) if active then itemScan = "multi" else itemScan = false end end},

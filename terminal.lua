@@ -866,12 +866,12 @@ local function purchase()
     local count = tonumber(writes.amount.input)
 
     if guiVariables[guiPath[#guiPath]].amount <= session.balance then
-        log("Init buy (" .. count .. " qty in the amount of " .. guiVariables[guiPath[#guiPath]].amount .. " rip) " .. guiVariables[guiPath[#guiPath]].item.text, session.name)
+        log("Init buy (" .. count .. " qty in the amount of " .. guiVariables[guiPath[#guiPath]].amount .. " SkillCoin) " .. guiVariables[guiPath[#guiPath]].item.text, session.name)
         local purchased = autoInsert(guiVariables[guiPath[#guiPath]].item.fingerprint, count)
 
         if purchased > 0 then
             local trueAmount = math.floor(purchased * guiVariables[guiPath[#guiPath]].item.buyPrice)
-            local msgToLog = session.name .. " buy the (" .. purchased .. " qty in the amount of " .. trueAmount .. " rip) " .. guiVariables[guiPath[#guiPath]].item.text
+            local msgToLog = session.name .. " buy the (" .. purchased .. " qty in the amount of " .. trueAmount .. " SkillCoin) " .. guiVariables[guiPath[#guiPath]].item.text
             log(msgToLog, session.name)
             session.balance = session.balance - trueAmount
             session.transactions = session.transactions + 1
@@ -942,7 +942,7 @@ local function buy()
     buttons.nextBuy.disabled = true
     drawButton("nextBuy")
     balance(1)
-    set(3, 3, "Магазин продаёт                 Кол-во         Цена", color.background, color.orange)
+    set(3, 3, "[0xFFD700]Магазин продаёт                 Кол-во         Цена", color.background, color.orange)
 end
 
 local function sellItem()
@@ -956,7 +956,7 @@ end
 local function sell()
     buttons.nextSell.disabled = true
     drawButton("nextSell")
-    set(3, 3, "Магазин покупает                Кол-во         Цена", color.background, color.orange)
+    set(3, 3, "[0xFFD700]Магазин покупает                Кол-во         Цена", color.background)
     balance(1)
 end
 
@@ -1065,7 +1065,7 @@ end
 -- end
 
 local function account()
-    setColorText(nil, 7, "[0x8B0000]" .. session.name .. ":", color.background)
+    setColorText(nil, 7, "[0xFFD700]" .. session.name .. "[0x8B0000]:", color.background)
     balance(9)
     setColorText(nil, 10, "[0x46c8e3]Совершенно транзакций: [0x8B0000]" .. session.transactions, color.background)
     setColorText(15, 11, "[0x46c8e3]Регистрация: [0x8B0000]" .. session.regTime, color.background)

@@ -1457,14 +1457,16 @@ function login(name)
                                 buttons.eula.notVisible = false
                                 buttons.back.notVisible = true
                                 toGui("info")
+                                
                             else
                                 buttons.eula.disabled = true
                                 buttons.eula.notVisible = false
                                 buttons.back.notVisible = true
                                 toGui("info2")
-                            end
+                            
                             end
                         end
+                    end
                     else
                         outOfService(response.message)
                     end

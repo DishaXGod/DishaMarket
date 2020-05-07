@@ -1131,9 +1131,6 @@ end
 local function info()
     set(20, 1, "Тебе нужна помощь? Читай!", color.background, color.orange)
     drawInfo(1)
-local function info2()
-    set(20, 1, "Тебе нужна помощь? Читай!", color.background, color.orange)
-    drawInfo2(1)
 end
 
 local function drawFeedback(page)

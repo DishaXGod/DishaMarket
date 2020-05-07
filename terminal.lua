@@ -1150,7 +1150,7 @@ local function drawFeedback(page)
 
     if len > 60 then
         for i = 1, math.ceil(len / 60) do
-            set(nil, i + 7, unicode.sub(session.feedbacks[page].feedback, i * 60 - 59, i * 60), color.background, color.orange)
+            set(nil, i + 7, unicode.sub(session.feedbacks[page].feedback, i * 60 - 59, i * 60), color.background, color.gold)
         end
     else
         set(nil, 8, session.feedbacks[page].feedback, color.background, color.orange)

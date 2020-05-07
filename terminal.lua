@@ -35,6 +35,18 @@ local INFO = [[
 [0x8B0000]8. [0xFFFFFF]Что будет, если я продам зачарованный(переименованный, заряженный, и т.д) меч/гравик и т.д? — цена таких вещей равняется стандартному предмету.
 ]]
 
+local INFO2 = [[
+[0x8B0000]DishaXGod говорит: [0xFFFFFF]Эй, спрячь ствол!
+[0x8B0000]1. [0xFFFFFF]Парень, ты попал в NWA-Shop, не пугайся тебя тут никто не ограбит.
+[0x8B0000]2. [0xFFFFFF]Это не просто магазин, а еще обменник руды!
+[0x8B0000]3. [0xFFFFFF]Что такое [0x8B0000]SkillCoin[0xFFFFFF]? [0x8B0000]—[0xFFFFFF] Это валюта которой ты расплачиваешься в магазине.
+[0x8B0000]4. [0xFFFFFF]Как мне пополнить свой счет? [0x8B0000]—[0xFFFFFF] Зайди во вкладку "продажа" и продай что-то магазину.
+[0x8B0000]5. [0xFFFFFF]Как купить товар? [0x8B0000]—[0xFFFFFF] выбираете товар, набираете  товара, и товар будет добавлен в ваш инвентарь. Если денег недостаточно - товар нельзя купить.
+[0x8B0000]6. [0xFFFFFF]Как обменять руду? [0x8B0000]—[0xFFFFFF] Выбираете режим поиска предметов, и руда будет обменена на слитки автоматически!
+[0x8B0000]7. [0xFFFFFF]Ты хочешь продать много товара, нажми "Весь инвентарь", а если парочку нажми "1 слот"
+[0x8B0000]8. [0xFFFFFF]Что будет, если я продам зачарованный(переименованный, заряженный, и т.д) меч/гравик и т.д? — цена таких вещей равняется стандартному предмету.
+]]
+
 local pim, me, selector, tmpfs, modem = proxy("pim"), proxy("me_interface"), proxy("openperipheral_selector"), component.proxy(computer.tmpAddress())
 local json, serialization = require("json"), require("serialization")
 local terminal = computer.address()
@@ -285,7 +297,61 @@ local function parseInfo()
         end
     end
 end
+--
+local function parseInfo()
+    local tag, str, symbols, skip, words, page = false, "", 0, 0, 0, 1
 
+    for sym = 1, unicode.len(INFO2) do 
+        if skip > 0 then
+            skip = skip - 1
+        else
+            local symbol = unicode.sub(INFO2, sym, sym)
+            
+            if symbol == [[\]] and unicode.sub(INFO2, sym + 1, sym + 1) == "n" then
+                table.insert(infoList[page], str)
+                table.insert(infoList[page], "\n")
+                str, symbols, words, skip = "", 0, words + 1, 1
+            elseif not ((symbols == 0 or symbols == 60) and symbol == " ") then
+                if symbol == "\n" and symbols > 0 then
+                    table.insert(infoList[page], str)
+                    table.insert(infoList[page], "\n")
+                    str, symbols, words = "", 0, words + 1
+                elseif symbol == "[" then
+                    tag = ""
+
+                    if str ~= "" then
+                        table.insert(infoList[page], str)
+                        str = ""
+                    end
+                elseif symbol == "]" then
+                    table.insert(infoList[page], {tonumber(tag)})
+                    tag = false
+                elseif tag then
+                    tag = tag .. symbol 
+                else 
+                    if symbols == 60 then
+                        table.insert(infoList[page], str)
+                        table.insert(infoList[page], "\n")
+                        str, symbols, words = "", 0, words + 1
+                    end
+
+                    str = str .. symbol
+                    symbols = symbols + 1 
+                end
+
+                if sym == unicode.len(INFO2) and str ~= "" then
+                    table.insert(infoList[page], str)
+                end
+
+                if words == 13 then
+                    page, words = page + 1, 0
+                    infoList[page] = {}
+                end
+            end
+        end
+    end
+end
+--
 local function encodeChar(chr)
     return string.format("%%%X", string.byte(chr))
 end
@@ -1391,6 +1457,12 @@ function login(name)
                                 buttons.eula.notVisible = false
                                 buttons.back.notVisible = true
                                 toGui("info")
+                            else
+                                buttons.eula.disabled = true
+                                buttons.eula.notVisible = false
+                                buttons.back.notVisible = true
+                                toGui("info2")
+                            end
                             end
                         end
                     else
@@ -1543,6 +1615,9 @@ buttons = {
 
     prevInfo = {buttonIn = {"info"}, disabled = true, disabledBackground = color.background, disabledForeground = color.blackBlue, background = color.background, activeBackground = background, foreground = color.blue, activeForeground = color.blackBlue, text = "<───", x = 21, y = 16, width = 4, height = 1, action = function() drawInfo(guiPage - 1) end},
     nextInfo = {buttonIn = {"info"}, disabled = true, disabledBackground = color.background, disabledForeground = color.blackBlue, background = color.background, activeBackground = background, foreground = color.blue, activeForeground = color.blackBlue, text = "───>", x = 36, y = 16, width = 4, height = 1, action = function() drawInfo(guiPage + 1) end},
+
+    prevInfo = {buttonIn = {"info2"}, disabled = true, disabledBackground = color.background, disabledForeground = color.blackBlue, background = color.background, activeBackground = background, foreground = color.blue, activeForeground = color.blackBlue, text = "<───", x = 21, y = 16, width = 4, height = 1, action = function() drawInfo(guiPage - 1) end},
+    nextInfo = {buttonIn = {"info2"}, disabled = true, disabledBackground = color.background, disabledForeground = color.blackBlue, background = color.background, activeBackground = background, foreground = color.blue, activeForeground = color.blackBlue, text = "───>", x = 36, y = 16, width = 4, height = 1, action = function() drawInfo(guiPage + 1) end},
 
     
     acceptFeedback = {buttonIn = {"feedbacks"}, notVisible = true, background = color.background, activeBackground = color.background, foreground = color.lime, activeForeground = color.blackLime, text = "[Подтвердить]", x = 24, y = 14, width = 13, height = 1, action = function() acceptFeedback() end},

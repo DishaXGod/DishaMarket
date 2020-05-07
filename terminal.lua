@@ -49,7 +49,7 @@ local autonomous = false
 local color = {
     pattern = "%[0x(%x%x%x%x%x%x)]",
     background = 0x000000,
-    pim = 0x46c8e3,
+    pim = 0xFFD700,
 
     gray = 0x303030,
     lightGray = 0xA9A9A9,

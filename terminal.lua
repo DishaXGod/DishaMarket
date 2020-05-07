@@ -243,7 +243,6 @@ local function sort(a, b)
     elseif a.user then
         return a.user < b.user
     end
-end
 
 local function parseInfo()
     local tag, str, symbols, skip, words, page = false, "", 0, 0, 0, 1

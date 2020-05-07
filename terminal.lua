@@ -1127,12 +1127,55 @@ local function drawPage()
     fill(24, 16, 9, 1, " ", color.background)
     set(nil, 16, tostring(guiPage), color.background, color.blue)
 end
-
+--123
+    
 local function drawInfo(page)
     guiPage = page
     drawPage() 
 
-    if page == #infoList then
+    if page == #infoList2 then
+        buttons.nextInfo.disabled = true
+        if not session.eula then
+            buttons.eula.disabled = false
+            drawButton("eula")
+        end
+        drawButton("nextInfo")
+    else
+        buttons.nextInfo.disabled = false
+        drawButton("nextInfo")
+    end
+    if page ~= 1 then
+        buttons.prevInfo.disabled = false
+        drawButton("prevInfo")
+    else
+        buttons.prevInfo.disabled = true
+        drawButton("prevInfo")
+    end
+
+    fill(1, 2, 60, 13, " ", color.background)
+    gpu.setForeground(0xffffff)
+    local x, y = 1, 2
+
+    for word = 1, #infoList2[page] do 
+        if type(infoList2[page][word]) == "table" then
+            gpu.setForeground(infoList2[page][word][1])
+        else
+            if infoList2[page][word] == "\n" then
+                x, y = 1, y + 1
+            else
+                gpu.set(x, y, infoList2[page][word])
+                x = x + unicode.len(infoList2[page][word])
+            end
+        end
+    end
+end
+--
+    
+local function drawInfo(page)
+    guiPage = page
+    drawPage() 
+
+    if page == #infoList2 then
         buttons.nextInfo.disabled = true
         if not session.eula then
             buttons.eula.disabled = false
@@ -1157,18 +1200,20 @@ local function drawInfo(page)
 
     for word = 1, #infoList[page] do 
         if type(infoList[page][word]) == "table" then
-            gpu.setForeground(infoList[page][word][1])
+            gpu.setForeground(infoList2[page][word][1])
         else
-            if infoList[page][word] == "\n" then
+            if infoList2[page][word] == "\n" then
                 x, y = 1, y + 1
             else
-                gpu.set(x, y, infoList[page][word])
-                x = x + unicode.len(infoList[page][word])
+                gpu.set(x, y, infoList2[page][word])
+                x = x + unicode.len(infoList2[page][word])
             end
         end
     end
 end
 
+    ----
+    
 local function info()
     set(20, 1, "Тебе нужна помощь? Читай!", color.background, color.orange)
     drawInfo(1)

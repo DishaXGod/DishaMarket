@@ -19,8 +19,8 @@ local server = "Default"
 local version, port = "modem", 1414
 local serverAddress = "d4a82811-ce76-4f92-a76f-d7872c57d77c"
 
---local priceLottery = 150
---local superPrize = 10000
+local priceLottery = 150
+local superPrize = 10000
 local freeFoodCount = 16
 
 local INFO = [[

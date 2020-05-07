@@ -1146,19 +1146,19 @@ local function drawFeedback(page)
 
     local len = unicode.len(session.feedbacks[page].feedback)
     fill(1, 6, 60, 3, " ", color.background)
-    set(nil, 7, session.feedbacks[page].name .. ":", color.background, color.lime)
+    set(nil, 7, session.feedbacks[page].name .. ":", color.background, color.gold)
 
     if len > 60 then
         for i = 1, math.ceil(len / 60) do
             set(nil, i + 7, unicode.sub(session.feedbacks[page].feedback, i * 60 - 59, i * 60), color.background, color.gold)
         end
     else
-        set(nil, 8, session.feedbacks[page].feedback, color.background, color.orange)
+        set(nil, 8, session.feedbacks[page].feedback, color.background, color.gold)
     end
 end
 
 local function feedbacks()
-    set(27, 1, "Отзывы", color.background, color.orange)
+    set(27, 1, "Отзывы", color.background, color.red)
     drawPage()
     if #session.feedbacks == 0 then
         set(8, 8, "Отзывов нет. Будьте первым, кто его оставит=)", color.background, color.lime)

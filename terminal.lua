@@ -21,7 +21,7 @@ local serverAddress = "d4a82811-ce76-4f92-a76f-d7872c57d77c"
 
 --local priceLottery = 150
 --local superPrize = 10000
---local freeFoodCount = 16
+local freeFoodCount = 16
 
 local INFO = [[
 [0x8B0000]DishaXGod: [0xFFFFFF]Эй, спрячь ствол!
@@ -1001,7 +1001,7 @@ end
 local function getFood()
    if autoInsert(items.food, freeFoodCount) > 0 then
       log("I give out free food", session.name)
-       session.foodTime = time(true) + 86400
+       session.foodTime = time(true) + 21600
        haveFood = true
        requestWithData(nil, {method = "merge", toMerge = {foodTime = session.foodTime}, name = session.name})
       fill(18, 7, 26, 1, " ", color.background)

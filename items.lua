@@ -9,7 +9,7 @@
 		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
 		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
 		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
-		{text = "Гравитул", buyPrice = 10000, minCount = 0, maxCount = 500, fingerprint = {{dmg=27.0,id="GraviSuit:graviTool"}}, raw_name = {"item.gravisuitgravitool"}},
+		{text = "Гравитул", buyPrice = 10000, minCount = 0, maxCount = 500, fingerprint = {{dmg=27.0,id="GraviSuit:graviTool"}}, raw_name = {"item.gravisuit.gravitool"}},
 		{text = "Стейк", buyPrice = 50, minCount = 0, maxCount = 5000, fingerprint = {{dmg=0.0,id="minecraft:cooked_beef"}}, raw_name = {"item.beefcooked"}},
 		{text = "Торт", buyPrice = 500, minCount = 0, maxCount = 5000, fingerprint = {{dmg=0.0,id="minecraft:cake"}}, raw_name = {"item.cake"}},
 		{text = "Углеволок. лопасть ротора", buyPrice = 1500, minCount = 0, maxCount = 1000, fingerprint = {{dmg=9.0,id="IC2:itemRecipePart"}}, raw_name = {"ic2.itemcarbonrotorblade"}},

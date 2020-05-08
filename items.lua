@@ -11,7 +11,7 @@
 		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
 		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
 		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
-		{text = "Глина", sellPrice = 15, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="minecraft:clay"}}, raw_name = {"tile.clay"}},
+		{text = "Глина", sellPrice = 15, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="minecraft:clay"}}, raw_name = {"tile.clay"}},
 		{text = "Рудопромывочный механизм", buyPrice = 3000, minCount = 0, maxCount = 5000, fingerprint = {{dmg=5.0,id="IC2:blockMachine2"}}, raw_name = {"ic2.blockorewashingplant"}},
 		{text = "Индукционная плечь", buyPrice = 4000, minCount = 0, maxCount = 5000, fingerprint = {{dmg=13.0,id="IC2:blockMachine"}}, raw_name = {"ic2.blockinduction"}},
 		{text = "Жидк/твердотельн. наполнитель", buyPrice = 1500, minCount = 0, maxCount = 5000, fingerprint = {{dmg=6.0,id="IC2:blockMachine"}}, raw_name = {"ic2.blockcanner"}},

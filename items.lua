@@ -57,7 +57,7 @@
 		{text = "Слизь", buyPrice = 5000, minCount = 0, maxCount = 5000, fingerprint = {{dmg=0.0,id="minecraft:slime_ball"}}, raw_name = {"item.slimeball"}},
 		{text = "Слиток Мифрила", buyPrice = 250, minCount = 0, maxCount = 15000, fingerprint = {{dmg=70.0,id="ThermalFoundation:material"}}, raw_name = {"item.thermalfoundation.material.ingotmithril"}},
 		{text = "Карта ускорения", buyPrice = 1500, minCount = 0, maxCount = 1500, fingerprint = {{dmg=30.0,id="appliedenergestics2:item.ItemMultiMatrial"}}, raw_name = {"item.appliedenergestics2.itemmaterial.cardspeed"}},
-		{text = "Лазурит", buyPrice = 15, minCount = 0, maxCount = 15000, fingerprint = {{dmg=4.0,id="minecraft:dye"}}, raw_name = {"item.dye"}},
+		{text = "Лазурит", buyPrice = 15, minCount = 0, maxCount = 50000, fingerprint = {{dmg=4.0,id="minecraft:dye"}}, raw_name = {"item.dye"}},
 		{text = "Уголь", buyPrice = 15, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="minecraft:coal"}}, raw_name = {"item.coal"}},
 		{text = "Солнечная панель 2 уровень", buyPrice = 20000, minCount = 0, maxCount = 1000, fingerprint = {{dmg=0.0,id="CompactSolars:CompactSolarBlock"}}, raw_name = {"tile.compactsolars:lv_block"}},
 		{text = "Слиток Урана", buyPrice = 720, minCount = 0, maxCount = 50000, fingerprint = {{dmg=11.0,id="AdvancedSolarPanel:asp_crafting_items"}}, raw_name = {"itemuraningot"}},

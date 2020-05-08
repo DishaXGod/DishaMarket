@@ -134,5 +134,5 @@
         {text="Серебряная руда",ratio=2,raw_name={"tile.thermalfoundation.ore.silver.name"},fingerprint={{dmg=66.0,id="ThermalFoundation:material"},{dmg=6.0,id="IC2:itemIngot"}}},
     },
 
-    food = {{dmg=0.0, id="minecraft:cake", "minecraft:melon"}}
+    food = {{dmg=0.0, id="minecraft:melon"}}
 }

@@ -10,7 +10,7 @@
 		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
 		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
 		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
-		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
+		{text = "Сканер", buyPrice = 10000, minCount = 0, maxCount = 5000, fingerprint = {{dmg=7.0,id="IC2:blockMachine2"}}, raw_name = {"ic2.blockscanner"}},
 		{text = "Глина", sellPrice = 15, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="minecraft:clay"}}, raw_name = {"tile.clay"}},
 		{text = "Рудопромывочный механизм", buyPrice = 3000, minCount = 0, maxCount = 5000, fingerprint = {{dmg=5.0,id="IC2:blockMachine2"}}, raw_name = {"ic2.blockorewashingplant"}},
 		{text = "Индукционная плечь", buyPrice = 4000, minCount = 0, maxCount = 5000, fingerprint = {{dmg=13.0,id="IC2:blockMachine"}}, raw_name = {"ic2.blockinduction"}},
@@ -101,10 +101,10 @@
 		{text = "Изумруд", buyPrice = 560, minCount = 0, maxCount = 5000, fingerprint = {{id="minecraft:emerald",dmg=0.0}}, raw_name = {"item.emerald"}},
 		{text = "Череп Скелета-Иссушителя", buyPrice = 2000000, minCount = 0, needed = 128, maxCount = 500, fingerprint = {{dmg=1.0,id="minecraft:skull"}}, raw_name = {"item.skull.wither"}},
 		{text = "Слиток закалённого железа", buyPrice = 520, minCount = 0, maxCount = 15000, fingerprint = {{id="ImmersiveEngineering:metal",dmg=7.0}, {dmg=4.0,id="Mekanism:Ingot"}}, raw_name = {"item.immersiveengineering.metal.ingotsteel"}},
-		{text = "Выч. пресс для высекателя", buyPrice = 15000, minCount = 0, maxCount = 500, fingerprint = {{id="appliedenergistics2:item.ItemMultiMaterial",dmg=13.0}}, raw_name = {"item.appliedenergistics2.itemmaterial.calcprocessorpress"}},
-      		{text = "Инж. пресс для высекателя", buyPrice = 15000, minCount = 0, maxCount = 500, fingerprint = {{id="appliedenergistics2:item.ItemMultiMaterial",dmg=14.0}}, raw_name = {"item.appliedenergistics2.itemmaterial.engprocessorpress"}},
-        	{text = "Лог. пресс для высекателя", buyPrice = 15000, minCount = 0, maxCount = 500, fingerprint = {{id="appliedenergistics2:item.ItemMultiMaterial",dmg=15.0}}, raw_name = {"item.appliedenergistics2.itemmaterial.logicprocessorpress"}},
-        	{text = "Крем. пресс для высекателя", buyPrice = 15000, minCount = 0, maxCount = 500, fingerprint = {{id="appliedenergistics2:item.ItemMultiMaterial",dmg=19.0}}, raw_name = {"item.appliedenergistics2.itemmaterial.siliconpress"}},
+		{text = "Пресс выч. для высекателя", buyPrice = 15000, minCount = 0, maxCount = 500, fingerprint = {{id="appliedenergistics2:item.ItemMultiMaterial",dmg=13.0}}, raw_name = {"item.appliedenergistics2.itemmaterial.calcprocessorpress"}},
+      		{text = "Пресс инж. для высекателя", buyPrice = 15000, minCount = 0, maxCount = 500, fingerprint = {{id="appliedenergistics2:item.ItemMultiMaterial",dmg=14.0}}, raw_name = {"item.appliedenergistics2.itemmaterial.engprocessorpress"}},
+        	{text = "Пресс лог. для высекателя", buyPrice = 15000, minCount = 0, maxCount = 500, fingerprint = {{id="appliedenergistics2:item.ItemMultiMaterial",dmg=15.0}}, raw_name = {"item.appliedenergistics2.itemmaterial.logicprocessorpress"}},
+        	{text = "Пресс крем. для высекателя", buyPrice = 15000, minCount = 0, maxCount = 500, fingerprint = {{id="appliedenergistics2:item.ItemMultiMaterial",dmg=19.0}}, raw_name = {"item.appliedenergistics2.itemmaterial.siliconpress"}},
         	{text = "Светопыль", buyPrice = 300, minCount = 0, maxCount = 15000, fingerprint = {{id="minecraft:glowstone_dust",dmg=0.0}}, raw_name = {"item.yellowdust"}},
 		{text = "Красная пыль", buyPrice = 15, minCount = 0, maxCount = 15000, fingerprint = {{id="minecraft:redstone",dmg=0.0}}, raw_name = {"item.redstone"}},
 		{text = "Алмаз", buyPrice = 450, minCount = 0, maxCount = 5000, fingerprint = {{dmg=0.0,id="minecraft:diamond"}}, raw_name = {"item.diamond"}},
@@ -134,5 +134,5 @@
         {text="Серебряная руда",ratio=2,raw_name={"tile.thermalfoundation.ore.silver.name"},fingerprint={{dmg=66.0,id="ThermalFoundation:material"},{dmg=6.0,id="IC2:itemIngot"}}},
     },
 
-    food = {{dmg=0.0, id="minecraft:melon"}}
+    food = {{dmg=0.0, id="minecraft:cake", "minecraft:melon"}}
 }

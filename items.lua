@@ -11,7 +11,7 @@
 		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
 		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
 		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
-		{text = "Ведро свето. камня", buyPrice = 450, minCount = 0, maxCount = 50000, fingerprint = {{dmg=1.0,id="ThermalFoundation:bucket"}}, raw_name = {"item.thermalfoundation.bucket.bucketglowstone"}},
+		{text = "Ведро свето. камня", buyPrice = 450, minCount = 0, maxCount = 5000, fingerprint = {{dmg=1.0,id="ThermalFoundation:bucket"}}, raw_name = {"item.thermalfoundation.bucket.bucketglowstone"}},
 		{text = "Ведро красного камня", buyPrice = 100, minCount = 0, maxCount = 5000, fingerprint = {{dmg=0.0,id="ThermalFoundation:bucket"}}, raw_name = {"item.thermalfoundation.bucket.bucketredstone"}},
 		{text = "Лава", buyPrice = 400, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="IC2:itemCellEmpty"}}, raw_name = {"ic2.itemcelllava"}},
 		{text = "Вода", buyPrice = 250, minCount = 0, maxCount = 15000, fingerprint = {{dmg=1.0,id="IC2:itemCellEmpty"}}, raw_name = {"ic2.itemcellwater"}},

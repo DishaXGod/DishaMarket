@@ -362,7 +362,7 @@ local function requestWithData(log, data, forceKey)
             end
         end
     else
-        error("Unknown program version, need internet/modem")
+        error("Версия программы устарела, требуется подключение к интернету!")
     end
 
     return false
@@ -936,8 +936,8 @@ local function buyItem()
     setColorText(2, 3, "[0x46c8e3]Имя предмета: [0xFFD700]" .. guiVariables[guiPath[#guiPath]].item.text , color.background)
     setColorText(44, 3, "[0x46c8e3]Доступно: [0xFFD700]" .. math.floor(guiVariables[guiPath[#guiPath]].item.count), color.background)
     setColorText(48, 5, "[0x46c8e3]Цена: [0xFFD700]" .. guiVariables[guiPath[#guiPath]].item.buyPrice, color.background)
-    set(2, 5, "На сумму:", color.background, color.lime)
-    set(2, 7, "Кол-во:", color.background, color.lime)
+    set(2, 5, "На сумму:[0xFFD700]", color.background, color.lime)
+    set(2, 7, "Кол-во:[0xFFD700]", color.background, color.lime)
     amount(false, true)
 end
 
@@ -1005,7 +1005,7 @@ local function getFood()
        haveFood = true
        requestWithData(nil, {method = "merge", toMerge = {foodTime = session.foodTime}, name = session.name})
       fill(18, 7, 26, 1, " ", color.background)
-      set(21, 7, "Не обляпайся!", color.background, 0x8B0000)
+      set(21, 7, "Кушай на здоровье!", color.background, 0x8B0000)
        nextFood()
         drawButton("getFood")
    else

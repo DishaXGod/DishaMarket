@@ -10,7 +10,7 @@
 		{text = "Нано шлем", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
 		{text = "Нано поножи", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
 		{text = "Нано нагрудник", buyPrice = 4000, minCount = 0, maxCount = 500, fingerprint = {{dmg=27.0,id="IC2:itemArmorNanoChestplate"}}, raw_name = {"ic2.itemarmornanochestplate"}},
-		{text = "Нано ботинки", buyPrice = 3500, minCount = 0, maxCount = 500, fingerprint = {{dmg=27.0,id="IC2:itemArmorNanoboots"}}, raw_name = {"ic2.itemarmornanoboots"}},
+		{text = "Нано ботинки", buyPrice = 3500, minCount = 0, maxCount = 500, fingerprint = {{dmg=27.0,id="IC2:itemArmorNanoBoots"}}, raw_name = {"ic2.itemarmornanoboots"}},
 		{text = "Ведро свето. камня", buyPrice = 450, minCount = 0, maxCount = 5000, fingerprint = {{dmg=1.0,id="ThermalFoundation:bucket"}}, raw_name = {"item.thermalfoundation.bucket.bucketglowstone"}},
 		{text = "Ведро красного камня", buyPrice = 100, minCount = 0, maxCount = 5000, fingerprint = {{dmg=0.0,id="ThermalFoundation:bucket"}}, raw_name = {"item.thermalfoundation.bucket.bucketredstone"}},
 		{text = "Лава", buyPrice = 400, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="IC2:itemCellEmpty"}}, raw_name = {"ic2.itemcelllava"}},

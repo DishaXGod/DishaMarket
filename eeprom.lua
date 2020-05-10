@@ -106,7 +106,7 @@ end
 
 local function update()
     clear()
-    gpu.set(26, 9, "NWA-Shop Updating...")
+    gpu.set(24, 9, "NWA-Shop Обновляется...")
     write("/main.lua", "w", request("https://raw.githubusercontent.com/DishaXGod/DishaMarket/master/terminal.lua"))
 end
 
@@ -153,7 +153,7 @@ local function run()
 
     if filesystem.exists("/main.lua") then
         clear()
-        gpu.set(25, 9, "Booting up...")
+        gpu.set(23, 9, "Запуск магазина...")
         running = true
         execute(read("/main.lua"), "=main.lua", true)
         running = false

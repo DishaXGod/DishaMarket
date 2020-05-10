@@ -101,7 +101,7 @@
 		{text = "Шина Экспорта", buyPrice = 1000, minCount = 0, maxCount = 1000, fingerprint = {{dmg=260.0,id="appliedenergistics2:item.ItemMultiPart"}}, raw_name = {"item.appliedenergistics2:itempart.exportbus"}},
 		{text = "Адский нарост", buyPrice = 500, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="minecraft:nether_wart"}}, raw_name = {"item.netherstalkseed"}},
 		{text = "МЭ Контролер", buyPrice = 1500, minCount = 0, maxCount = 1500, fingerprint = {{dmg=0.0,id="appliedenergistics2:tile.BlockController"}}, raw_name = {"appliedenergistics2.blockcontroller"}},
-		{text = "Беспроводной соединитель", buyPrice = 8000, minCount = 0, maxCount = 1000, fingerprint = {{dmg=0.0,id="ae2stuff:Wireless"}}, raw_name = {"tile.ae2stuff.wireless"}},
+		{text = "Беспроводной соединитель", buyPrice = 10000, minCount = 0, maxCount = 1000, fingerprint = {{dmg=0.0,id="ae2stuff:Wireless"}}, raw_name = {"tile.ae2stuff.wireless"}},
 		{text = "Шерсть", buyPrice = 5000, minCount = 0, maxCount = 10000, fingerprint = {{dmg=0.0,id="minecraft:wool"}}, raw_name = {"item.wool"}},
 		{text = "Ядро Дракона", buyPrice = 75000, minCount = 0, maxCount = 15000, fingerprint = {{dmg=0.0,id="DraconicEvolution:draconicCore"}}, raw_name = {"item.draconicevolution:draconiccore"}},
 		{text = "Ядро Виверны", buyPrice = 2500000, minCount = 0, maxCount = 500, fingerprint = {{dmg=0.0,id="DraconicEvolution:wyvernCore"}}, raw_name = {"item.draconicevolution:wyverncore"}},

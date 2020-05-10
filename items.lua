@@ -2,8 +2,8 @@
     shop = {
 		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
 		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
-		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id=""}}, raw_name = {"item."}},
-		{text = "Душа", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="IC2:itemArmorQuantum"}}, raw_name = {"ic2.itemarmorу"}},
+		{text = "Яйцо Дракона", buyPrice = 5000000, minCount = 0, maxCount = 500, fingerprint = {{dmg=0.0,id="minecraft:dragon_egg"}}, raw_name = {"tile.dragonegg"}},
+		{text = "Квант шлем", buyPrice = 15000, minCount = 0, maxCount = 50000, fingerprint = {{dmg=0.0,id="IC2:itemArmorQuantum"}}, raw_name = {"ic2.itemarmorу"}},
 		{text = "Квант нагрудник", buyPrice = 480000, minCount = 0, maxCount = 500, fingerprint = {{dmg=0.0,id="IC2:itemArmorQuantumChestplate"}}, raw_name = {"ic2.itemarmorchestplate"}},
 		{text = "Квант поножи", buyPrice = 250000, minCount = 0, maxCount = 500, fingerprint = {{dmg=1.0,id="IC2:itemArmorQuantumLegs"}}, raw_name = {"ic2.itemarmorlegs"}},
 		{text = "Квант ботинки", buyPrice = 250000, minCount = 0, maxCount = 500, fingerprint = {{dmg=1.0,id="IC2:itemArmorQuantumBoots"}}, raw_name = {"ic2.itemarmorquantumboots"}},

@@ -1819,7 +1819,7 @@ while true do
                     session.transactions = session.transactions + 1
                     local response = requestWithData({data = msgToLog, mPath = "/sell.log", path = server .. "/sell"}, {method = "merge", toMerge = {balance = {[server] = session.balance}, transactions = session.transactions}, name = session.name}) 
                     if response and response.code == 200 then
-                        setColorText(nil, 14, "[0x68f029]Баланс успешно пополнен на [0xffffff]" .. math.floor(addMoney) .. " [0x68f029] рипов!", color.background)
+                        setColorText(nil, 14, "[0x68f029]Баланс успешно пополнен на [0xffffff]" .. math.floor(addMoney) .. " [0x68f029] SkillCoins!", color.background)
                         balance(1)
                         scanMe()
                         fill(1, 14, 60, 1, " ", color.background)

@@ -117,7 +117,7 @@
 		{text = "Слиток закалённого железа", buyPrice = 520, minCount = 0, maxCount = 256, fingerprint = {{id="ImmersiveEngineering:metal",dmg=7.0}, {dmg=4.0,id="Mekanism:Ingot"}}, raw_name = {"item.immersiveengineering.metal.ingotsteel"}},
 		{text = "Пресс выч. для высекателя", buyPrice = 15000, minCount = 0, maxCount = 10, fingerprint = {{id="appliedenergistics2:item.ItemMultiMaterial",dmg=13.0}}, raw_name = {"item.appliedenergistics2.itemmaterial.calcprocessorpress"}},
       		{text = "Пресс инж. для высекателя", buyPrice = 15000, minCount = 0, maxCount = 10, fingerprint = {{id="appliedenergistics2:item.ItemMultiMaterial",dmg=14.0}}, raw_name = {"item.appliedenergistics2.itemmaterial.engprocessorpress"}},
-        	{text = "Пресс лог. для высекателя", buyPrice = 15000, minCount = 0, maxCount = 10 fingerprint = {{id="appliedenergistics2:item.ItemMultiMaterial",dmg=15.0}}, raw_name = {"item.appliedenergistics2.itemmaterial.logicprocessorpress"}},
+        	{text = "Пресс лог. для высекателя", buyPrice = 15000, minCount = 0, maxCount = 10, fingerprint = {{id="appliedenergistics2:item.ItemMultiMaterial",dmg=15.0}}, raw_name = {"item.appliedenergistics2.itemmaterial.logicprocessorpress"}},
         	{text = "Пресс крем. для высекателя", buyPrice = 15000, minCount = 0, maxCount = 10, fingerprint = {{id="appliedenergistics2:item.ItemMultiMaterial",dmg=19.0}}, raw_name = {"item.appliedenergistics2.itemmaterial.siliconpress"}},
         	{text = "Светопыль", buyPrice = 300, minCount = 0, maxCount = 256, fingerprint = {{id="minecraft:glowstone_dust",dmg=0.0}}, raw_name = {"item.yellowdust"}},
 		{text = "Красная пыль", buyPrice = 20, minCount = 0, maxCount = 256, fingerprint = {{id="minecraft:redstone",dmg=0.0}}, raw_name = {"item.redstone"}},
